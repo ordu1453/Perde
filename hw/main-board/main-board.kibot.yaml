@@ -125,9 +125,10 @@ outputs:
       view: bottom
 
   # --- Visual diff between two git points (KiDiff, wrapped by KiBot) ---
-  # Used on PRs: @KIBOT_DIFF_OLD@ is set to the PR base ref from CI with
-  #   kibot -E KIBOT_DIFF_OLD=origin/<base_branch> -i diff_pcb diff_sch
-  # Locally (no -E given) it falls back to diffing against the previous commit.
+  # @KIBOT_DIFF_OLD@ must be supplied via `-E KIBOT_DIFF_OLD=<ref>` (CI does
+  # this, pointing at the PR base branch). These targets are never part of
+  # the default output list, so this is only resolved when explicitly run:
+  #   kibot -E KIBOT_DIFF_OLD=origin/main diff_pcb diff_sch
   - name: 'diff_pcb'
     comment: 'Visual diff of the PCB vs. a previous git revision'
     type: diff
@@ -151,7 +152,3 @@ outputs:
       new_type: current
       diff_mode: red_green
       only_different: true
-
----
-definitions:
-  KIBOT_DIFF_OLD: 'HEAD~1'

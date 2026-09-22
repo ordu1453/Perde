@@ -4,8 +4,15 @@ kibot:
   version: 1
 
 preflight:
-  erc: true
-  drc: true
+  # dont_stop: a preflight failure (e.g. missing board outline) would
+  # otherwise abort the whole run before any output is generated - even
+  # ones like schematic_pdf that don't depend on ERC/DRC passing. With
+  # dont_stop, KiBot still reports the failure (see the html report) but
+  # continues on to generate the requested outputs.
+  erc:
+    dont_stop: true
+  drc:
+    dont_stop: true
 
 outputs:
   # --- Documentation ---

@@ -1,0 +1,60 @@
+name: KiCad Release (main-board)
+
+# Tag pushes are excluded from path-filtering in kicad-ci.yml (a tag on an
+# existing commit has no "changed files" of its own), so this runs as a
+# separate workflow whenever a vX.Y.Z tag is pushed.
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  PROJECT_DIR: hw/main-board
+
+jobs:
+  build:
+    name: Build fabrication package
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto_full:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate all outputs (ERC/DRC gates the build)
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          kibot -c main-board.kibot.yaml \
+                -e main-board.kicad_sch \
+                -b main-board.kicad_pcb \
+                -d Output \
+                schematic_pdf pcb_pdf gerbers drill gerbers_zip \
+                position bom bom_csv step render_top render_bottom
+
+      - name: Upload release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-package
+          path: ${{ env.PROJECT_DIR }}/Output
+
+  release:
+    name: Publish GitHub release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build output
+        uses: actions/download-artifact@v4
+        with:
+          name: release-package
+          path: Output
+
+      - name: Create/update release with fabrication package
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Output/**/*.zip
+            Output/**/*.csv
+            Output/**/*.html
+            Output/**/*.pdf
+            Output/3D/**

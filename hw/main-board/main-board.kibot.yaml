@@ -1,0 +1,157 @@
+# KiBot config for main-board (KiCad 10)
+# Docs: https://kibot.readthedocs.io/
+kibot:
+  version: 1
+
+preflight:
+  erc: true
+  drc: true
+
+outputs:
+  # --- Documentation ---
+  - name: 'schematic_pdf'
+    comment: 'Schematic in PDF'
+    type: pdf_sch_print
+    dir: Documentation
+    options:
+      output: Schematic.pdf
+
+  - name: 'pcb_pdf'
+    comment: 'PCB layers in PDF'
+    type: pcb_print
+    dir: Documentation
+    options:
+      output: PCB.pdf
+
+  # --- Fabrication (gerbers + drill) ---
+  - name: 'gerbers'
+    comment: 'Gerbers for the board house'
+    type: gerber
+    dir: Fabrication/Gerbers
+    options:
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: false
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: false
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+      line_width: 0.1
+      subtract_mask_from_silk: true
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: true
+      use_gerber_net_attributes: true
+
+  - name: 'drill'
+    comment: 'Drill files'
+    type: excellon
+    dir: Fabrication/Gerbers
+    options:
+      metric_units: true
+      pth_and_npth_single_file: false
+      minimal_header: false
+      mirror_y_axis: false
+      use_aux_axis_as_origin: false
+
+  - name: 'gerbers_zip'
+    comment: 'Zipped gerbers+drill for the board house'
+    type: compress
+    dir: Fabrication
+    options:
+      format: ZIP
+      files:
+        - from_output: gerbers
+          dest: /
+        - from_output: drill
+          dest: /
+
+  # --- Assembly ---
+  - name: 'position'
+    comment: 'Pick and place file'
+    type: position
+    dir: Fabrication/Assembly
+    options:
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: true
+      only_smd: true
+
+  - name: 'bom'
+    comment: 'Bill of Materials (HTML)'
+    type: bom
+    dir: Fabrication/Assembly
+    options:
+      format: HTML
+      normalize_values: true
+      columns:
+        - Row
+        - References
+        - Value
+        - Footprint
+        - Quantity Per PCB
+
+  - name: 'bom_csv'
+    comment: 'Bill of Materials (CSV)'
+    type: bom
+    dir: Fabrication/Assembly
+    options:
+      format: CSV
+      normalize_values: true
+
+  # --- 3D ---
+  - name: 'step'
+    comment: '3D model (STEP)'
+    type: export_3d
+    dir: 3D
+    options:
+      format: step
+      units: millimeters
+
+  - name: 'render_top'
+    comment: '3D render, top view'
+    type: render_3d
+    dir: 3D
+    options:
+      view: top
+
+  - name: 'render_bottom'
+    comment: '3D render, bottom view'
+    type: render_3d
+    dir: 3D
+    options:
+      view: bottom
+
+  # --- Visual diff between two git points (KiDiff, wrapped by KiBot) ---
+  # Used on PRs: @KIBOT_DIFF_OLD@ is set to the PR base ref from CI with
+  #   kibot -E KIBOT_DIFF_OLD=origin/<base_branch> -i diff_pcb diff_sch
+  # Locally (no -E given) it falls back to diffing against the previous commit.
+  - name: 'diff_pcb'
+    comment: 'Visual diff of the PCB vs. a previous git revision'
+    type: diff
+    dir: Diff
+    options:
+      pcb: true
+      old: '@KIBOT_DIFF_OLD@'
+      old_type: git
+      new_type: current
+      diff_mode: red_green
+      only_different: true
+
+  - name: 'diff_sch'
+    comment: 'Visual diff of the schematic vs. a previous git revision'
+    type: diff
+    dir: Diff
+    options:
+      pcb: false
+      old: '@KIBOT_DIFF_OLD@'
+      old_type: git
+      new_type: current
+      diff_mode: red_green
+      only_different: true
+
+---
+definitions:
+  KIBOT_DIFF_OLD: 'HEAD~1'

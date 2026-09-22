@@ -1,0 +1,29 @@
+name: KiCad Pull Request Diff (Kiri)
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths:
+      - 'hw/main-board/**'
+
+jobs:
+  kiri-diff:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Kiri
+        uses: wang-edward/kiri-github-action@v2
+        with:
+          project-file: hw/main-board/main-board.kicad_pro

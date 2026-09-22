@@ -1,0 +1,21 @@
+name: KiCad Diff Delete (Kiri)
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  kiri-delete:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Kiri
+        uses: wang-edward/kiri-github-action@v2

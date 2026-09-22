@@ -1,0 +1,130 @@
+name: KiCad CI (main-board)
+
+on:
+  push:
+    branches: ['**']
+    paths:
+      - 'hw/main-board/**'
+      - '.github/workflows/kicad-ci.yml'
+  pull_request:
+    paths:
+      - 'hw/main-board/**'
+      - '.github/workflows/kicad-ci.yml'
+  workflow_dispatch: {}
+
+# Cancel superseded runs on the same branch/PR
+concurrency:
+  group: kicad-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  PROJECT_DIR: hw/main-board
+
+jobs:
+  # ERC/DRC gate + schematic/PCB PDFs. Fails the pipeline if ERC or DRC
+  # report real errors (KiBot's default preflight behavior).
+  validate:
+    name: ERC / DRC + docs
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run ERC/DRC and generate PDFs
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          kibot -c main-board.kibot.yaml \
+                -e main-board.kicad_sch \
+                -b main-board.kicad_pcb \
+                -d Output \
+                schematic_pdf pcb_pdf
+
+      - name: Upload checks + docs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checks-and-docs
+          path: ${{ env.PROJECT_DIR }}/Output
+          if-no-files-found: warn
+
+  fabrication:
+    name: Gerbers / drill / BOM / STEP
+    needs: validate
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate fabrication outputs
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          kibot -c main-board.kibot.yaml \
+                -e main-board.kicad_sch \
+                -b main-board.kicad_pcb \
+                -d Output \
+                -s erc,drc \
+                gerbers drill gerbers_zip position bom bom_csv step
+
+      - name: Upload fabrication outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: fabrication
+          path: ${{ env.PROJECT_DIR }}/Output
+
+  render:
+    name: 3D renders (Blender)
+    needs: validate
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto_full:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render top/bottom views
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          kibot -c main-board.kibot.yaml \
+                -e main-board.kicad_sch \
+                -b main-board.kicad_pcb \
+                -d Output \
+                -s erc,drc \
+                render_top render_bottom
+
+      - name: Upload 3D renders
+        uses: actions/upload-artifact@v4
+        with:
+          name: 3d-renders
+          path: ${{ env.PROJECT_DIR }}/Output
+
+  # Visual diff of the PCB/schematic vs. the PR base branch (KiDiff, driven
+  # through KiBot's `diff` output). Only meaningful on pull requests.
+  visual-diff:
+    name: Visual diff vs. base branch (KiDiff)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto:latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Generate PCB/schematic diff vs. base branch
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          kibot -c main-board.kibot.yaml \
+                -e main-board.kicad_sch \
+                -b main-board.kicad_pcb \
+                -d Output \
+                -s erc,drc \
+                -E KIBOT_DIFF_OLD=origin/${{ github.base_ref }} \
+                diff_pcb diff_sch
+
+      - name: Upload diff PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-diff
+          path: ${{ env.PROJECT_DIR }}/Output/Diff
+          if-no-files-found: warn

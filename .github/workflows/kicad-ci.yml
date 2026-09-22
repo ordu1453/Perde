@@ -23,13 +23,19 @@ permissions:
 env:
   PROJECT_DIR: hw/main-board
 
+# Every kibot step below runs with -D (--dont-stop), so it always attempts
+# to generate whatever it can regardless of errors - that part is
+# unconditional. Whether a real failure (non-zero kibot exit) turns the
+# step/job red is controlled by the KICAD_CI_STRICT repository variable
+# (Settings > Secrets and variables > Actions > Variables):
+#   unset or anything but "true" (default): lenient - a real ERC/DRC/output
+#     failure is still reported (see the uploaded artifacts) but doesn't
+#     fail the job, so early-stage/placeholder designs don't block CI.
+#   "true": strict/honest - a real failure fails the job, and anything
+#     needs-ing it (fabrication/render/publish-latest) is skipped, same as
+#     any other genuine CI failure.
 jobs:
-  # ERC/DRC + schematic/PCB PDFs. The project is early-stage (empty sch/PCB),
-  # so ERC/DRC errors are expected and must NOT break the pipeline: -D makes
-  # KiBot keep going after a failed output, and continue-on-error keeps this
-  # step (and therefore the job, and anything that needs it) green even if
-  # KiBot itself exits non-zero. The full ERC/DRC report still lands in the
-  # uploaded artifact, so problems stay visible without blocking anything.
+  # ERC/DRC + schematic/PCB PDFs.
   validate:
     name: ERC / DRC + docs
     runs-on: ubuntu-latest
@@ -39,7 +45,7 @@ jobs:
 
       - name: Run ERC/DRC and generate PDFs
         working-directory: ${{ env.PROJECT_DIR }}
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
@@ -65,7 +71,7 @@ jobs:
 
       - name: Generate fabrication outputs
         working-directory: ${{ env.PROJECT_DIR }}
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
@@ -94,7 +100,7 @@ jobs:
 
       - name: Render top/bottom views
         working-directory: ${{ env.PROJECT_DIR }}
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
@@ -141,7 +147,7 @@ jobs:
       - name: Generate PCB/schematic diff
         if: steps.diffref.outputs.old != ''
         working-directory: ${{ env.PROJECT_DIR }}
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
@@ -195,7 +201,7 @@ jobs:
           cp -r artifacts/visual-diff/. Output/Diff/ 2>/dev/null || true
 
       - name: Generate viewer and navigation index
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c ${{ env.PROJECT_DIR }}/main-board.kibot.yaml \
                 -e ${{ env.PROJECT_DIR }}/main-board.kicad_sch \

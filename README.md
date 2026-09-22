@@ -28,7 +28,12 @@ Triggered on every push and pull request affecting `hw/main-board/**`. The workf
 | **Visual diff (KiDiff)** | Generates a red/green visual comparison of the PCB and schematic against a prior revision — the pull request base branch when run on a pull request, or the preceding commit when run on a direct push. |
 | **Publish latest build** | Consolidates the outputs of the jobs above, regenerates an interactive KiCanvas schematic/PCB viewer and a KiBot `navigate_results` index over the merged tree, and publishes the result to the `gh-pages` branch under `/latest/`, providing a persistent, browsable link to the most recent build of `main`. |
 
-As the hardware design is presently at an early stage, the pipeline is configured not to fail on design-rule violations: KiBot is invoked with `-D` (`--dont-stop`), and each step is marked `continue-on-error`. Reports and partial outputs are uploaded regardless of outcome, so any issues remain visible without interrupting the build. This policy is intended to be tightened once the design matures beyond a placeholder state.
+As the hardware design is presently at an early stage, the pipeline defaults to not failing on design-rule violations: KiBot is invoked with `-D` (`--dont-stop`), which always applies, and each step's `continue-on-error` is controlled by the **`KICAD_CI_STRICT`** repository variable (*Settings → Secrets and variables → Actions → Variables*):
+
+- Unset, or any value other than `true` (default) — lenient: a real ERC/DRC/output failure is still reported in the uploaded artifacts, but does not fail the job, so an early-stage or placeholder design doesn't block CI.
+- `true` — strict: a real failure fails the job for real, and any job depending on it (fabrication, renders, publish-latest) is skipped, exactly as with any other genuine CI failure.
+
+Setting `KICAD_CI_STRICT=true` once the design is no longer a placeholder is recommended so a broken board or schematic is reflected honestly in the pipeline's status.
 
 #### `kicad-release.yml` — Release Packaging
 

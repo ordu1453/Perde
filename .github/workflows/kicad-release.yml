@@ -22,14 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Same non-blocking policy as kicad-ci.yml while the design is
-      # early-stage: -D keeps KiBot going past a failed output, and
-      # continue-on-error keeps the job green even if it exits non-zero.
-      # Once the board is no longer a placeholder, consider dropping both
-      # so a broken release can't ship silently.
+      # Same KICAD_CI_STRICT toggle as kicad-ci.yml (see its header):
+      # lenient by default so an early-stage design doesn't block a build,
+      # set the repo variable KICAD_CI_STRICT=true to fail this job for
+      # real on a broken release instead of shipping it silently.
       - name: Generate all outputs
         working-directory: ${{ env.PROJECT_DIR }}
-        continue-on-error: true
+        continue-on-error: ${{ vars.KICAD_CI_STRICT != 'true' }}
         run: |
           kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \

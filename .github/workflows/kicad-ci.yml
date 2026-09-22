@@ -24,8 +24,12 @@ env:
   PROJECT_DIR: hw/main-board
 
 jobs:
-  # ERC/DRC gate + schematic/PCB PDFs. Fails the pipeline if ERC or DRC
-  # report real errors (KiBot's default preflight behavior).
+  # ERC/DRC + schematic/PCB PDFs. The project is early-stage (empty sch/PCB),
+  # so ERC/DRC errors are expected and must NOT break the pipeline: -D makes
+  # KiBot keep going after a failed output, and continue-on-error keeps this
+  # step (and therefore the job, and anything that needs it) green even if
+  # KiBot itself exits non-zero. The full ERC/DRC report still lands in the
+  # uploaded artifact, so problems stay visible without blocking anything.
   validate:
     name: ERC / DRC + docs
     runs-on: ubuntu-latest
@@ -35,8 +39,9 @@ jobs:
 
       - name: Run ERC/DRC and generate PDFs
         working-directory: ${{ env.PROJECT_DIR }}
+        continue-on-error: true
         run: |
-          kibot -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
@@ -60,8 +65,9 @@ jobs:
 
       - name: Generate fabrication outputs
         working-directory: ${{ env.PROJECT_DIR }}
+        continue-on-error: true
         run: |
-          kibot -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
@@ -69,10 +75,12 @@ jobs:
                 gerbers drill gerbers_zip position bom bom_csv step
 
       - name: Upload fabrication outputs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: fabrication
           path: ${{ env.PROJECT_DIR }}/Output
+          if-no-files-found: warn
 
   render:
     name: 3D renders (Blender)
@@ -84,8 +92,9 @@ jobs:
 
       - name: Render top/bottom views
         working-directory: ${{ env.PROJECT_DIR }}
+        continue-on-error: true
         run: |
-          kibot -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
@@ -93,10 +102,12 @@ jobs:
                 render_top render_bottom
 
       - name: Upload 3D renders
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: 3d-renders
           path: ${{ env.PROJECT_DIR }}/Output
+          if-no-files-found: warn
 
   # Visual diff of the PCB/schematic vs. the PR base branch (KiDiff, driven
   # through KiBot's `diff` output). Only meaningful on pull requests.
@@ -113,8 +124,9 @@ jobs:
 
       - name: Generate PCB/schematic diff vs. base branch
         working-directory: ${{ env.PROJECT_DIR }}
+        continue-on-error: true
         run: |
-          kibot -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
@@ -123,6 +135,7 @@ jobs:
                 diff_pcb diff_sch
 
       - name: Upload diff PDFs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: visual-diff

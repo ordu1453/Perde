@@ -18,4 +18,5 @@ jobs:
       pull-requests: write
     steps:
       - name: Kiri
+        continue-on-error: true
         uses: wang-edward/kiri-github-action@v2

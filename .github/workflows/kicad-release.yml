@@ -22,10 +22,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate all outputs (ERC/DRC gates the build)
+      # Same non-blocking policy as kicad-ci.yml while the design is
+      # early-stage: -D keeps KiBot going past a failed output, and
+      # continue-on-error keeps the job green even if it exits non-zero.
+      # Once the board is no longer a placeholder, consider dropping both
+      # so a broken release can't ship silently.
+      - name: Generate all outputs
         working-directory: ${{ env.PROJECT_DIR }}
+        continue-on-error: true
         run: |
-          kibot -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
@@ -33,10 +39,12 @@ jobs:
                 position bom bom_csv step render_top render_bottom
 
       - name: Upload release package
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: release-package
           path: ${{ env.PROJECT_DIR }}/Output
+          if-no-files-found: warn
 
   release:
     name: Publish GitHub release

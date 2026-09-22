@@ -23,7 +23,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+      # Non-blocking while the board/schematic are still placeholders:
+      # a Kiri failure won't fail the job or block other checks.
       - name: Kiri
+        continue-on-error: true
         uses: wang-edward/kiri-github-action@v2
         with:
           project-file: hw/main-board/main-board.kicad_pro

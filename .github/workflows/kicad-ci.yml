@@ -41,7 +41,7 @@ jobs:
         working-directory: ${{ env.PROJECT_DIR }}
         continue-on-error: true
         run: |
-          kibot -D -v -c main-board.kibot.yaml \
+          kibot -D -c main-board.kibot.yaml \
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \

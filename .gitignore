@@ -1,0 +1,26 @@
+# KiCad
+
+# Бэкапы и автосохранение KiCad
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*.bck
+_autosave-*
+\#auto_saved_files#
+*~
+*.tmp
+
+# Локальные настройки и кэш
+*.kicad_prl
+fp-info-cache
+~*.lck
+
+# Промежуточные файлы
+*.net
+*.dsn
+*.ses
+
+# Производственные выходные файлы
+gerbers/
+fab/

@@ -159,41 +159,50 @@ jobs:
           path: ${{ env.PROJECT_DIR }}/Output/Diff
           if-no-files-found: warn
 
-  # Mirrors this run's artifacts to gh-pages/latest/ with a plain index, so
-  # gerbers/BOM/renders/diff are reachable by a stable direct link instead
-  # of having to open the Actions run and download a zip. Only for pushes
-  # to main.
+  # Mirrors this run's artifacts to gh-pages/latest/, then regenerates a
+  # KiCanvas viewer and a KiBot navigate_results index over the merged
+  # tree so the page is real navigation instead of a flat file list.
+  # Only for pushes to main.
   publish-latest:
     name: Publish latest build to GitHub Pages
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: [validate, fabrication, render, visual-diff]
     runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad10_auto:latest
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
+
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
           path: artifacts
 
-      - name: Build latest/ folder with an index page
+      # Reconstruct the directory layout main-board.kibot.yaml's outputs
+      # expect (dir: per output), so navigate_results can find every file
+      # at the same path its own definition points to. Every job uploaded
+      # its Output/ subtree as-is, except visual-diff, which uploaded
+      # Output/Diff/* directly (its artifact root *is* Diff/), so that one
+      # needs re-nesting back under Diff/.
+      - name: Reassemble the KiBot output tree
         run: |
-          set -e
-          rm -rf site
-          mkdir -p site/latest
-          cp -r artifacts/* site/latest/ 2>/dev/null || true
+          rm -rf Output
+          mkdir -p Output/Diff
+          cp -r artifacts/checks-and-docs/. Output/ 2>/dev/null || true
+          cp -r artifacts/fabrication/. Output/ 2>/dev/null || true
+          cp -r artifacts/3d-renders/. Output/ 2>/dev/null || true
+          cp -r artifacts/visual-diff/. Output/Diff/ 2>/dev/null || true
 
-          {
-            echo "<!doctype html><meta charset=\"utf-8\">"
-            echo "<title>Perde main-board — latest build</title>"
-            echo "<h1>Perde main-board — latest build</h1>"
-            echo "<p>Commit: <a href=\"https://github.com/${{ github.repository }}/commit/${{ github.sha }}\">${{ github.sha }}</a><br>"
-            echo "Built: $(date -u +'%Y-%m-%d %H:%M UTC')</p>"
-            echo "<ul>"
-            find site/latest -type f ! -name index.html | sed 's#^site/##' | sort | \
-              while read -r f; do echo "<li><a href=\"/Perde/$f\">$f</a></li>"; done
-            echo "</ul>"
-          } > site/latest/index.html
+      - name: Generate viewer and navigation index
+        continue-on-error: true
+        run: |
+          kibot -D -c ${{ env.PROJECT_DIR }}/main-board.kibot.yaml \
+                -e ${{ env.PROJECT_DIR }}/main-board.kicad_sch \
+                -b ${{ env.PROJECT_DIR }}/main-board.kicad_pcb \
+                -d Output \
+                -s erc,drc \
+                kicanvas navigate_results
 
       - name: Checkout gh-pages
         uses: actions/checkout@v4
@@ -203,10 +212,11 @@ jobs:
           fetch-depth: 0
 
       - name: Publish to gh-pages/latest
+        shell: bash
         run: |
           set -e
           rm -rf gh-pages/latest
-          cp -r site/latest gh-pages/latest
+          cp -r Output gh-pages/latest
           cd gh-pages
           git config user.email "github-actions@github.com"
           git config user.name "github-actions"

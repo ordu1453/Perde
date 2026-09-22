@@ -80,6 +80,23 @@ outputs:
       format: step
       units: millimeters
 
+  # --- Web viewer + navigation index, for the gh-pages/latest publish ---
+  - name: 'kicanvas'
+    comment: 'Interactive schematic/PCB viewer (KiCanvas)'
+    type: kicanvas
+    dir: Viewer
+    options:
+      source: project
+      controls: full
+
+  - name: 'navigate_results'
+    comment: 'Browsable index of every generated output'
+    type: navigate_results
+    dir: Navigate
+    options:
+      link_from_root: index.html
+      title: 'Perde main-board'
+
   - name: 'render_top'
     comment: '3D render, top view'
     type: render_3d

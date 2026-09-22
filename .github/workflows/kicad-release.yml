@@ -48,6 +48,10 @@ jobs:
 
   release:
     name: Publish GitHub release
+    # softprops/action-gh-release needs a tag ref to attach the release to.
+    # Without this guard, a manual workflow_dispatch run (branch ref, no
+    # tag) would build fine and then fail here.
+    if: startsWith(github.ref, 'refs/tags/')
     needs: build
     runs-on: ubuntu-latest
     steps:

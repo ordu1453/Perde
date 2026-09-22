@@ -109,20 +109,35 @@ jobs:
           path: ${{ env.PROJECT_DIR }}/Output
           if-no-files-found: warn
 
-  # Visual diff of the PCB/schematic vs. the PR base branch (KiDiff, driven
-  # through KiBot's `diff` output). Only meaningful on pull requests.
+  # Visual diff of the PCB/schematic (KiDiff, driven through KiBot's `diff`
+  # output). On a PR: diffs against the PR base branch. On a direct push
+  # (no PR): diffs against the commit before the push, so plain pushes to
+  # main also get a visual diff, not just PRs.
   visual-diff:
-    name: Visual diff vs. base branch (KiDiff)
-    if: github.event_name == 'pull_request'
+    name: Visual diff (KiDiff)
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
     runs-on: ubuntu-latest
     container: ghcr.io/inti-cmnb/kicad10_auto:latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
 
-      - name: Generate PCB/schematic diff vs. base branch
+      - name: Determine comparison ref
+        id: diffref
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "old=origin/${{ github.base_ref }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            echo "old=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+          else
+            # First push of a new branch: nothing to diff against.
+            echo "old=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate PCB/schematic diff
+        if: steps.diffref.outputs.old != ''
         working-directory: ${{ env.PROJECT_DIR }}
         continue-on-error: true
         run: |
@@ -131,7 +146,7 @@ jobs:
                 -b main-board.kicad_pcb \
                 -d Output \
                 -s erc,drc \
-                -E KIBOT_DIFF_OLD=origin/${{ github.base_ref }} \
+                -E KIBOT_DIFF_OLD=${{ steps.diffref.outputs.old }} \
                 diff_pcb diff_sch
 
       - name: Upload diff PDFs

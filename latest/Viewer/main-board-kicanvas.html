@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <body>
+    <script type="module" src="kicanvas.js"></script>
+    <div id="no_file_access" style="display: none; ">
+      <span>The browser can't read local files. Enable it to continue. I.e. use <i>--allow-file-access-from-files</i> on Chrome</span>
+    </div>
+    <kicanvas-embed controls="full">
+      <kicanvas-source src="main-board.kicad_pro"></kicanvas-source>
+    </kicanvas-embed>
+    <script>
+
+function ready()
+{
+ try
+   {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('GET', 'main-board.kicad_pro', false);
+    xmlhttp.send();
+   }
+ catch (error)
+   {
+    if (window.location.protocol === 'file:')
+      {
+       document.getElementById('no_file_access').style.display = 'block';
+      }
+    throw(error);
+   }
+}
+
+window.addEventListener('DOMContentLoaded', ready);
+    </script>
+  </body>
+</html>

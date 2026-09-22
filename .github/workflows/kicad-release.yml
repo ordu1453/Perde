@@ -35,7 +35,9 @@ jobs:
                 -e main-board.kicad_sch \
                 -b main-board.kicad_pcb \
                 -d Output \
-                schematic_pdf pcb_pdf gerbers drill gerbers_zip \
+                schematic_pdf pcb_pdf \
+                _JLCPCB_gerbers _JLCPCB_drill _JLCPCB_position _JLCPCB_bom _JLCPCB_compress \
+                _PCBWay_gerbers _PCBWay_drill _PCBWay_compress \
                 position bom bom_csv step render_top render_bottom
 
       - name: Upload release package

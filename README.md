@@ -23,7 +23,7 @@ Triggered on every push and pull request affecting `hw/main-board/**`. The workf
 | Job | Description |
 |---|---|
 | **ERC / DRC + docs** | Executes the Electrical Rules Check and Design Rules Check preflights, and generates PDF exports of the schematic and PCB layout. |
-| **Gerbers / drill / BOM / STEP** | Produces Gerber and drill files (with a combined ZIP archive for fabrication), pick-and-place data, the Bill of Materials in HTML and CSV formats, and a STEP 3D model. |
+| **Gerbers / drill / BOM / STEP** | Produces Gerber and drill files for JLCPCB and PCBWay using KiBot's built-in per-manufacturer templates, each in its own directory with its own ZIP archive (JLCPCB's additionally includes an LCSC-formatted BOM and pick-and-place file); a manufacturer-neutral Bill of Materials (HTML and CSV), a pick-and-place file, and a STEP 3D model are generated separately. |
 | **3D renders** | Renders top and bottom views of the assembled board. |
 | **Visual diff (KiDiff)** | Generates a red/green visual comparison of the PCB and schematic against a prior revision — the pull request base branch when run on a pull request, or the preceding commit when run on a direct push. |
 | **Publish latest build** | Consolidates the outputs of the jobs above and publishes them to the `gh-pages` branch under `/latest/`, together with a generated index page, providing a persistent link to the most recent build of `main`. |

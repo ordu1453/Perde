@@ -72,7 +72,9 @@ jobs:
                 -b main-board.kicad_pcb \
                 -d Output \
                 -s erc,drc \
-                gerbers drill gerbers_zip position bom bom_csv step
+                _JLCPCB_gerbers _JLCPCB_drill _JLCPCB_position _JLCPCB_bom _JLCPCB_compress \
+                _PCBWay_gerbers _PCBWay_drill _PCBWay_compress \
+                position bom bom_csv step
 
       - name: Upload fabrication outputs
         if: always()

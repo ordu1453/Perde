@@ -22,6 +22,15 @@ preflight:
   drc:
     dont_stop: true
 
+  # Fills the title block's Revision field (set to the literal string
+  # "${REVISION}" in main-board.kicad_sch/.kicad_pcb) from git: the exact
+  # tag name on a release build, or "<tag>-<n>-g<hash>"/a bare short hash
+  # on an untagged commit (main). No CI-side branching needed - one
+  # command covers both cases.
+  set_text_variables:
+    - name: REVISION
+      command: 'git describe --tags --always --dirty'
+
 outputs:
   # --- Documentation ---
   - name: 'schematic_pdf'

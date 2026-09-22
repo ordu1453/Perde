@@ -156,3 +156,58 @@ jobs:
           name: visual-diff
           path: ${{ env.PROJECT_DIR }}/Output/Diff
           if-no-files-found: warn
+
+  # Mirrors this run's artifacts to gh-pages/latest/ with a plain index, so
+  # gerbers/BOM/renders/diff are reachable by a stable direct link instead
+  # of having to open the Actions run and download a zip. Only for pushes
+  # to main; doesn't touch KiRI's pr-previews/ folder on the same branch.
+  publish-latest:
+    name: Publish latest build to GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [validate, fabrication, render, visual-diff]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Build latest/ folder with an index page
+        run: |
+          set -e
+          rm -rf site
+          mkdir -p site/latest
+          cp -r artifacts/* site/latest/ 2>/dev/null || true
+
+          {
+            echo "<!doctype html><meta charset=\"utf-8\">"
+            echo "<title>Perde main-board — latest build</title>"
+            echo "<h1>Perde main-board — latest build</h1>"
+            echo "<p>Commit: <a href=\"https://github.com/${{ github.repository }}/commit/${{ github.sha }}\">${{ github.sha }}</a><br>"
+            echo "Built: $(date -u +'%Y-%m-%d %H:%M UTC')</p>"
+            echo "<ul>"
+            find site/latest -type f ! -name index.html | sed 's#^site/##' | sort | \
+              while read -r f; do echo "<li><a href=\"/Perde/$f\">$f</a></li>"; done
+            echo "</ul>"
+          } > site/latest/index.html
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 0
+
+      - name: Publish to gh-pages/latest
+        run: |
+          set -e
+          rm -rf gh-pages/latest
+          cp -r site/latest gh-pages/latest
+          cd gh-pages
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git add latest
+          git commit -m "Update latest build (main@${GITHUB_SHA::7})" || echo "Nothing to commit"
+          git push origin gh-pages

@@ -90,5 +90,16 @@
 			(outputdirectory "")
 		)
 	)
+	(gr_rect
+		(start 88.5 49)
+		(end 182 115.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "cbbe4615-43cf-49e2-9437-5b7cf07f9962")
+	)
 	(embedded_fonts no)
 )

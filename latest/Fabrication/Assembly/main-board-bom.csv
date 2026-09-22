@@ -1,4 +1,12 @@
-Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,Height,Manufacturer_Name,Manufacturer_Part_Number,Mouser Part Number,Mouser Price/Stock,Arrow Part Number,Arrow Price/Stock
+1,Unpolarized capacitor,C,C1,1 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1, ,,,,,,,,
+2,Unpolarized capacitor,C,C2 C3 C4,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,3, ,,,,,,,,
+3,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
+4,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
+5,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+6,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+7,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+8,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
 
 
 
@@ -8,11 +16,11 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-22_19-42-25
+Date:,2026-09-22_20-47-35
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,0
-Component Count:,0
-Fitted Components:,0
+Component Groups:,9
+Component Count:,12
+Fitted Components:,10
 Number of PCBs:,1
-Total Components:,0
+Total Components:,10

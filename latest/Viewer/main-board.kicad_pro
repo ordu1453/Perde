@@ -82,7 +82,9 @@
     "top_level_sheets": []
   },
   "sheets": [],
-  "text_variables": {},
+  "text_variables": {
+    "REVISION": "f67273a"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

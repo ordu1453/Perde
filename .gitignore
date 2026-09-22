@@ -24,3 +24,6 @@ fp-info-cache
 # Производственные выходные файлы
 gerbers/
 fab/
+
+# Редакторские артефакты (VSCode Local History и т.п.)
+.history/

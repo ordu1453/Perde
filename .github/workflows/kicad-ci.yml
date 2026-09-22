@@ -160,7 +160,7 @@ jobs:
   # Mirrors this run's artifacts to gh-pages/latest/ with a plain index, so
   # gerbers/BOM/renders/diff are reachable by a stable direct link instead
   # of having to open the Actions run and download a zip. Only for pushes
-  # to main; doesn't touch KiRI's pr-previews/ folder on the same branch.
+  # to main.
   publish-latest:
     name: Publish latest build to GitHub Pages
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

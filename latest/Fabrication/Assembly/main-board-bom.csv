@@ -2,7 +2,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 1,Unpolarized capacitor,C,C7,100 nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,
 2,Unpolarized capacitor,C,C1 C2 C3 C4 C5 C6,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,6, ,,,,,,,,
 3,Unpolarized capacitor,C,C8 C9,22 µF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2, ,,,,,,,,
-4,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
+4,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_Palconn_UTC16-G,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
 5,Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc,IHLP1616BZER4R7M11,L1,IHLP1616BZER4R7M11,INDPM4441X200N,1, ,https://www.vishay.com/docs/34196/lp16bz11.pdf,2,Vishay,IHLP1616BZER4R7M11,70-IHLP1616BZER4R7M1,https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D,IHLP1616BZER4R7M11,https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay
 6,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
 7,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
@@ -19,7 +19,7 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-23_20-16-27
+Date:,2026-09-23_21-04-08
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
 Component Groups:,12

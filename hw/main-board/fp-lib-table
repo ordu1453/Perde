@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Samacsys") (type "KiCad") (uri "E:/Projects/Perde/hw/lib/SamacSys_Parts.pretty") (options "") (descr ""))
+)

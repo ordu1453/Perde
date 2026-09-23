@@ -1544,7 +1544,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "DFN_3X3_EP"
+			(property "Footprint" "SamacSys_Parts:DFN_3X3_EP"
 				(at 21.59 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1853,7 +1853,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "INDPM4441X200N"
+			(property "Footprint" "SamacSys_Parts:INDPM4441X200N"
 				(at 16.51 -96.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3510,7 +3510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "INDPM4441X200N"
+		(property "Footprint" "Samacsys:INDPM4441X200N"
 			(at 125.73 211.76 0)
 			(hide yes)
 			(show_name no)
@@ -3755,7 +3755,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G"
 			(at 45.72 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3879,7 +3879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DFN_3X3_EP"
+		(property "Footprint" "Samacsys:DFN_3X3_EP"
 			(at 133.35 130.48 0)
 			(hide yes)
 			(show_name no)

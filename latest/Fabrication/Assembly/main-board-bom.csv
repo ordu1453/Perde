@@ -1,12 +1,15 @@
 Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,Height,Manufacturer_Name,Manufacturer_Part_Number,Mouser Part Number,Mouser Price/Stock,Arrow Part Number,Arrow Price/Stock
-1,Unpolarized capacitor,C,C1,1 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1, ,,,,,,,,
-2,Unpolarized capacitor,C,C2 C3 C4,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,3, ,,,,,,,,
-3,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
-4,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
-5,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-6,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-7,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-8,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
+1,Unpolarized capacitor,C,C7,100 nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1, ,,,,,,,,
+2,Unpolarized capacitor,C,C1 C2 C3 C4 C5 C6,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,6, ,,,,,,,,
+3,Unpolarized capacitor,C,C8 C9,22 µF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2, ,,,,,,,,
+4,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
+5,Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc,IHLP1616BZER4R7M11,L1,IHLP1616BZER4R7M11,INDPM4441X200N,1, ,https://www.vishay.com/docs/34196/lp16bz11.pdf,2,Vishay,IHLP1616BZER4R7M11,70-IHLP1616BZER4R7M1,https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D,IHLP1616BZER4R7M11,https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay
+6,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
+7,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+8,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+9,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+10,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6_HandSoldering,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
+11,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
 
 
 
@@ -16,11 +19,11 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-22_20-47-35
+Date:,2026-09-23_20-16-27
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,9
-Component Count:,12
-Fitted Components:,10
+Component Groups:,12
+Component Count:,19
+Fitted Components:,17
 Number of PCBs:,1
-Total Components:,10
+Total Components:,17

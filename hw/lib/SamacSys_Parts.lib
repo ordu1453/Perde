@@ -87,4 +87,29 @@ P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model IHLP1616BZER4R7M11
+#/399887/1777069/2.50/2/3/Inductor
+DEF IHLP1616BZER4R7M11 L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "IHLP1616BZER4R7M11" 650 150 50 H V L CNN
+F2 "INDPM4441X200N" 650 50 50 H I L CNN
+F3 "https://www.vishay.com/docs/34196/lp16bz11.pdf" 650 -50 50 H I L CNN
+F4 "Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc" 650 -150 50 H I L CNN "Description"
+F5 "2" 650 -250 50 H I L CNN "Height"
+F6 "Vishay" 650 -350 50 H I L CNN "Manufacturer_Name"
+F7 "IHLP1616BZER4R7M11" 650 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "70-IHLP1616BZER4R7M1" 650 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D" 650 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "IHLP1616BZER4R7M11" 650 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay" 650 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+ENDDRAW
+ENDDEF
+#
 #End Library

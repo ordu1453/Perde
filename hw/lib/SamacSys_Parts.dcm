@@ -18,4 +18,10 @@ K
 F http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf
 $ENDCMP
 #
+$CMP IHLP1616BZER4R7M11
+D Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc
+K
+F https://www.vishay.com/docs/34196/lp16bz11.pdf
+$ENDCMP
+#
 #End Doc Library

@@ -1,1 +1,24 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"C1","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-82.5050,0.0000,top
+"C2","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-85.5150,0.0000,top
+"C3","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-88.5250,0.0000,top
+"C4","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-91.5350,0.0000,top
+"C5","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-94.5450,0.0000,top
+"C6","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",151.8550,-97.5550,0.0000,top
+"C7","0.1uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-82.2550,0.0000,top
+"C8","22uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-84.7650,0.0000,top
+"C9","22uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-87.2750,0.0000,top
+"C10","4.7uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-89.7850,0.0000,top
+"C11","4.7uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-92.2950,0.0000,top
+"C12","100nF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-94.8050,0.0000,top
+"C13","22uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-97.3150,0.0000,top
+"J1","USB_C_Receptacle_USB2.0_16P","USB_C_Receptacle_Palconn_UTC16-G",155.2450,-103.1750,0.0000,top
+"L1","IHLP1616BZER4R7M11","INDPM4441X200N",138.9750,-104.0320,0.0000,top
+"Q1","AONR21307","DFN_3X3_EP",133.1270,-105.7400,0.0000,top
+"R1","10R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",156.6350,-82.4750,0.0000,top
+"R2","5K1","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",156.6350,-85.4250,0.0000,top
+"R3","49K9","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",156.6350,-88.3750,0.0000,top
+"U1","HUSB238_xxxDD","WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm",157.2700,-96.6950,0.0000,top
+"U2","AP63205WU","TSOT-23-6_HandSoldering",157.7450,-92.2000,180.0000,top
+"U3","AP2112K-3.3","SOT-23-5",145.1750,-103.5000,180.0000,top
+"U4","PTR54L","PTR54L15",142.4000,-91.0500,0.0000,top

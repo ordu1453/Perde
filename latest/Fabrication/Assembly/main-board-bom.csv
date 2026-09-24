@@ -12,6 +12,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 11,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
 12,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6_HandSoldering,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
 13,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
+14,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
 
 
 
@@ -21,11 +22,11 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-24_18-40-27
+Date:,2026-09-24_20-24-52
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,14
-Component Count:,22
-Fitted Components:,20
+Component Groups:,15
+Component Count:,23
+Fitted Components:,21
 Number of PCBs:,1
-Total Components:,20
+Total Components:,21

@@ -24,4 +24,10 @@ K
 F https://www.vishay.com/docs/34196/lp16bz11.pdf
 $ENDCMP
 #
+$CMP EEE-FK1V101P
+D Aluminum Electrolytic Capacitors - SMD 100uF 35V
+K
+F http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf
+$ENDCMP
+#
 #End Doc Library

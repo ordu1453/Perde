@@ -5,8 +5,8 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 4,Unpolarized capacitor,C,C15 C17 C21 C22,100 nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,4, ,,,,,,,,
 5,Unpolarized capacitor Unpolarized capacitor X7R,C,C1 C2 C3 C4 C5 C6 C10 C11 C16 C24,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,10, ,,,,,,,,
 6,Unpolarized capacitor,C,C8 C9 C13,22 µF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3, ,,,,,,,,
-7,Aluminum Electrolytic Capacitors - SMD 100uF 35V,EEE-FK1V101P,C20 C27,EEE-FK1V101P,EEHZT1E331UP,2, ,http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf,10.8,Panasonic,EEE-FK1V101P,667-EEE-FK1V101P,https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101P?qs=qE6bgDGEOCsMXxs4z7sT2w%3D%3D,EEE-FK1V101P,https://www.arrow.com/en/products/eeefk1v101p/panasonic?region=nac
-8,"2.54mm,header,KK,vert,Sn,frictn lock,4w Molex KK 254 Series, Series Number 6373, 2.54mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole, Solder Termination",22-23-2041,J2 J3,22-23-2041,SHDR4W87P0X254_1X4_1001X635X1105P,2, ,http://www.molex.com/pdm_docs/sd/022232041_sd.pdf,11.05,Molex,22-23-2041,538-22-23-2041,https://www.mouser.co.uk/ProductDetail/Molex/22-23-2041?qs=ILqg114nvd5W6e%252BaZws1Xg%3D%3D,,
+7,Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD,EEE-FT1V101AP,C20 C27,EEE-FT1V101AP,EEE1AA101SP,2, ,http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf,7.8,Panasonic,EEE-FT1V101AP,667-EEE-FT1V101AP,https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D,EEE-FT1V101AP,https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac
+8,"2.54mm,header,KK,90,Sn,frictn lock,4w Molex KK 254 Series, Series Number 7478, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Through Hole",22-05-3041,J2 J3,22-05-3041,22053041,2, ,http://www.molex.com/webdocs/datasheets/pdf/en-us//0022053041_PCB_HEADERS.pdf,,Molex,22-05-3041,538-22-05-3041,https://www.mouser.co.uk/ProductDetail/Molex/22-05-3041?qs=wUVoC1r15A%2FT%252BJIvtWt%252B5Q%3D%3D,,
 9,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_Palconn_UTC16-G,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
 10,Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc,IHLP1616BZER4R7M11,L1,IHLP1616BZER4R7M11,INDPM4441X200N,1, ,https://www.vishay.com/docs/34196/lp16bz11.pdf,2,Vishay,IHLP1616BZER4R7M11,70-IHLP1616BZER4R7M1,https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D,IHLP1616BZER4R7M11,https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay
 11,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
@@ -30,7 +30,7 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-25_21-02-39
+Date:,2026-09-25_21-29-24
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
 Component Groups:,23

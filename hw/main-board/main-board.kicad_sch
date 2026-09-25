@@ -3080,7 +3080,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Samacsys:22-23-2041"
+		(symbol "Samacsys:22-05-3041"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3097,7 +3097,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "22-23-2041"
+			(property "Value" "22-05-3041"
 				(at 16.51 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3108,7 +3108,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "SHDR4W87P0X254_1X4_1001X635X1105P"
+			(property "Footprint" "22053041"
 				(at 16.51 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3120,7 +3120,7 @@
 					(justify left top)
 				)
 			)
-			(property "Datasheet" "http://www.molex.com/pdm_docs/sd/022232041_sd.pdf"
+			(property "Datasheet" "http://www.molex.com/webdocs/datasheets/pdf/en-us//0022053041_PCB_HEADERS.pdf"
 				(at 16.51 -194.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3132,7 +3132,7 @@
 					(justify left top)
 				)
 			)
-			(property "Description" "2.54mm,header,KK,vert,Sn,frictn lock,4w Molex KK 254 Series, Series Number 6373, 2.54mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole, Solder Termination"
+			(property "Description" "2.54mm,header,KK,90,Sn,frictn lock,4w Molex KK 254 Series, Series Number 7478, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Through Hole"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3143,7 +3143,7 @@
 					)
 				)
 			)
-			(property "Height" "11.05"
+			(property "Height" ""
 				(at 16.51 -394.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3167,7 +3167,7 @@
 					(justify left top)
 				)
 			)
-			(property "Manufacturer_Part_Number" "22-23-2041"
+			(property "Manufacturer_Part_Number" "22-05-3041"
 				(at 16.51 -594.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3179,7 +3179,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Part Number" "538-22-23-2041"
+			(property "Mouser Part Number" "538-22-05-3041"
 				(at 16.51 -694.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3191,7 +3191,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-23-2041?qs=ILqg114nvd5W6e%252BaZws1Xg%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-05-3041?qs=wUVoC1r15A%2FT%252BJIvtWt%252B5Q%3D%3D"
 				(at 16.51 -794.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3227,7 +3227,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "22-23-2041_1_1"
+			(symbol "22-05-3041_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 15.24 -10.16)
@@ -3620,7 +3620,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Samacsys:EEE-FK1V101P"
+		(symbol "Samacsys:EEE-FT1V101AP"
 			(pin_names
 				(hide yes)
 			)
@@ -3640,7 +3640,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "EEE-FK1V101P"
+			(property "Value" "EEE-FT1V101AP"
 				(at 8.89 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3651,7 +3651,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "EEHZT1E331UP"
+			(property "Footprint" "EEE1AA101SP"
 				(at 8.89 -96.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3663,7 +3663,7 @@
 					(justify left top)
 				)
 			)
-			(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
+			(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
 				(at 8.89 -196.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3675,7 +3675,7 @@
 					(justify left top)
 				)
 			)
-			(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35V"
+			(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3686,7 +3686,7 @@
 					)
 				)
 			)
-			(property "Height" "10.8"
+			(property "Height" "7.8"
 				(at 8.89 -396.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3710,7 +3710,7 @@
 					(justify left top)
 				)
 			)
-			(property "Manufacturer_Part_Number" "EEE-FK1V101P"
+			(property "Manufacturer_Part_Number" "EEE-FT1V101AP"
 				(at 8.89 -596.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3722,7 +3722,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Part Number" "667-EEE-FK1V101P"
+			(property "Mouser Part Number" "667-EEE-FT1V101AP"
 				(at 8.89 -696.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3734,7 +3734,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101P?qs=qE6bgDGEOCsMXxs4z7sT2w%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D"
 				(at 8.89 -796.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3746,7 +3746,7 @@
 					(justify left top)
 				)
 			)
-			(property "Arrow Part Number" "EEE-FK1V101P"
+			(property "Arrow Part Number" "EEE-FT1V101AP"
 				(at 8.89 -896.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3758,7 +3758,7 @@
 					(justify left top)
 				)
 			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeefk1v101p/panasonic?region=nac"
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac"
 				(at 8.89 -996.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3770,7 +3770,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "EEE-FK1V101P_1_1"
+			(symbol "EEE-FT1V101AP_1_1"
 				(polyline
 					(pts
 						(xy 2.54 0) (xy 5.08 0)
@@ -7643,6 +7643,180 @@
 		)
 	)
 	(symbol
+		(lib_id "Samacsys:22-05-3041")
+		(at 377.19 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09b020a9-04df-48c3-9b5a-42c4e255ac1e")
+		(property "Reference" "J3"
+			(at 393.7 182.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22-05-3041"
+			(at 393.7 185.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "22053041"
+			(at 393.7 275.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.molex.com/webdocs/datasheets/pdf/en-us//0022053041_PCB_HEADERS.pdf"
+			(at 393.7 375.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "2.54mm,header,KK,90,Sn,frictn lock,4w Molex KK 254 Series, Series Number 7478, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Through Hole"
+			(at 377.19 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 393.7 575.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Molex"
+			(at 393.7 675.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "22-05-3041"
+			(at 393.7 775.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "538-22-05-3041"
+			(at 393.7 875.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-05-3041?qs=wUVoC1r15A%2FT%252BJIvtWt%252B5Q%3D%3D"
+			(at 393.7 975.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 393.7 1075.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 393.7 1175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "4"
+			(uuid "67b15207-d0a7-4d27-af32-e5e6d127374d")
+		)
+		(pin "1"
+			(uuid "9b8b5dd8-ade5-47d2-b394-711fe0f37b89")
+		)
+		(pin "3"
+			(uuid "35855414-3b94-4593-a5a8-9189c49fc906")
+		)
+		(pin "2"
+			(uuid "19590074-3545-4255-b131-1b7c37f7b37a")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 358.14 166.37 180)
 		(unit 1)
@@ -9794,174 +9968,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Samacsys:EEE-FK1V101P")
-		(at 265.43 160.02 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4b54aaaa-9fd9-442c-a474-31167abb38b1")
-		(property "Reference" "C20"
-			(at 269.24 152.3999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "EEE-FK1V101P"
-			(at 269.24 154.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "EEHZT1E331UP"
-			(at 361.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
-			(at 461.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35V"
-			(at 265.43 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.8"
-			(at 661.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 761.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FK1V101P"
-			(at 861.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FK1V101P"
-			(at 961.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101P?qs=qE6bgDGEOCsMXxs4z7sT2w%3D%3D"
-			(at 1061.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "EEE-FK1V101P"
-			(at 1161.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeefk1v101p/panasonic?region=nac"
-			(at 1261.62 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "8491fa3e-f6fd-464c-8300-e1d6a5467f14")
-		)
-		(pin "1"
-			(uuid "59a7c741-5079-4e8a-818c-c4e11a1900d8")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 297.18 160.02 90)
 		(unit 1)
@@ -10441,520 +10447,6 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Samacsys:22-23-2041")
-		(at 259.08 180.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "54e81df9-3089-42d2-ad65-d149eca66bca")
-		(property "Reference" "J2"
-			(at 263.906 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22-23-2041"
-			(at 263.906 176.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SHDR4W87P0X254_1X4_1001X635X1105P"
-			(at 275.59 275.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.molex.com/pdm_docs/sd/022232041_sd.pdf"
-			(at 275.59 375.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "2.54mm,header,KK,vert,Sn,frictn lock,4w Molex KK 254 Series, Series Number 6373, 2.54mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole, Solder Termination"
-			(at 259.08 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "11.05"
-			(at 275.59 575.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
-			(at 275.59 675.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "22-23-2041"
-			(at 275.59 775.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "538-22-23-2041"
-			(at 275.59 875.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-23-2041?qs=ILqg114nvd5W6e%252BaZws1Xg%3D%3D"
-			(at 275.59 975.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 275.59 1075.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 275.59 1175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "1"
-			(uuid "1f12276d-6221-4121-b4eb-75a292003f28")
-		)
-		(pin "2"
-			(uuid "f2d73075-94b5-4233-8095-5bd9096eaded")
-		)
-		(pin "4"
-			(uuid "12db1d4b-dc1a-49d5-b864-d9662805a04c")
-		)
-		(pin "3"
-			(uuid "2045e4b8-7bc3-4913-90b1-2e623316c2ff")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Samacsys:22-23-2041")
-		(at 377.19 180.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "56ec49d6-198c-45a5-bc72-b29be34c11bb")
-		(property "Reference" "J3"
-			(at 382.016 173.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22-23-2041"
-			(at 382.016 176.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SHDR4W87P0X254_1X4_1001X635X1105P"
-			(at 393.7 275.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.molex.com/pdm_docs/sd/022232041_sd.pdf"
-			(at 393.7 375.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "2.54mm,header,KK,vert,Sn,frictn lock,4w Molex KK 254 Series, Series Number 6373, 2.54mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole, Solder Termination"
-			(at 377.19 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "11.05"
-			(at 393.7 575.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
-			(at 393.7 675.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "22-23-2041"
-			(at 393.7 775.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "538-22-23-2041"
-			(at 393.7 875.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-23-2041?qs=ILqg114nvd5W6e%252BaZws1Xg%3D%3D"
-			(at 393.7 975.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 393.7 1075.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 393.7 1175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "3"
-			(uuid "f28e4f85-c645-4f9c-a1c6-5f3183885634")
-		)
-		(pin "1"
-			(uuid "7cd6a9f8-070a-431d-bac9-3486386988a0")
-		)
-		(pin "4"
-			(uuid "0246632d-c7ac-4ae8-bd15-9dd79b14d3c6")
-		)
-		(pin "2"
-			(uuid "4582eb36-0ef4-4431-bd3d-60d717ab6b16")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Samacsys:EEE-FK1V101P")
-		(at 383.54 160.02 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58a7c89b-3543-4d1e-a132-9115099fa7ab")
-		(property "Reference" "C27"
-			(at 387.35 152.3999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "EEE-FK1V101P"
-			(at 387.35 154.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "EEHZT1E331UP"
-			(at 479.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
-			(at 579.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35V"
-			(at 383.54 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.8"
-			(at 779.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 879.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FK1V101P"
-			(at 979.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FK1V101P"
-			(at 1079.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101P?qs=qE6bgDGEOCsMXxs4z7sT2w%3D%3D"
-			(at 1179.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "EEE-FK1V101P"
-			(at 1279.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeefk1v101p/panasonic?region=nac"
-			(at 1379.73 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "cf93cc61-3943-4e50-991b-41d178b85a90")
-		)
-		(pin "1"
-			(uuid "e2f01b1f-c831-43ea-b9cb-a07922d43f1f")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -11612,6 +11104,180 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Samacsys:22-05-3041")
+		(at 259.08 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62bbe407-5905-4e14-aa0a-9eb23b89697f")
+		(property "Reference" "J2"
+			(at 275.59 182.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22-05-3041"
+			(at 275.59 185.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "22053041"
+			(at 275.59 275.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.molex.com/webdocs/datasheets/pdf/en-us//0022053041_PCB_HEADERS.pdf"
+			(at 275.59 375.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "2.54mm,header,KK,90,Sn,frictn lock,4w Molex KK 254 Series, Series Number 7478, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Through Hole"
+			(at 259.08 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 275.59 575.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Molex"
+			(at 275.59 675.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "22-05-3041"
+			(at 275.59 775.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "538-22-05-3041"
+			(at 275.59 875.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/22-05-3041?qs=wUVoC1r15A%2FT%252BJIvtWt%252B5Q%3D%3D"
+			(at 275.59 975.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 275.59 1075.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 275.59 1175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "4"
+			(uuid "c9518eb0-a3e2-496e-a0fa-2c6172ce44e3")
+		)
+		(pin "1"
+			(uuid "bc43d0f0-168d-43da-8b33-c6dc9d9c9771")
+		)
+		(pin "3"
+			(uuid "01362954-1c46-4888-8a6a-17949741ccc3")
+		)
+		(pin "2"
+			(uuid "319b19bb-a334-47d7-a31b-84f7a4580346")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12974,6 +12640,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Samacsys:EEE-FT1V101AP")
+		(at 383.54 160.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c81de66-b14d-4fce-9f7a-bbc8d076bbe0")
+		(property "Reference" "C27"
+			(at 387.35 152.3999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "EEE-FT1V101AP"
+			(at 387.35 154.9399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "EEE1AA101SP"
+			(at 479.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
+			(at 579.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD"
+			(at 383.54 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "7.8"
+			(at 779.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 879.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "EEE-FT1V101AP"
+			(at 979.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "667-EEE-FT1V101AP"
+			(at 1079.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D"
+			(at 1179.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "EEE-FT1V101AP"
+			(at 1279.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac"
+			(at 1379.73 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "2"
+			(uuid "1f2d1e09-67bf-43cc-a5c8-1089b1c3d1a9")
+		)
+		(pin "1"
+			(uuid "c0e18104-2778-437b-9441-78799c3cefb5")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 85.09 40.64 270)
 		(unit 1)
@@ -13128,6 +12962,174 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Samacsys:EEE-FT1V101AP")
+		(at 265.43 160.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93fac8fb-b0a4-4306-b671-e4fd5d70a4ee")
+		(property "Reference" "C20"
+			(at 269.24 152.3999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "EEE-FT1V101AP"
+			(at 269.24 154.9399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "EEE1AA101SP"
+			(at 361.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
+			(at 461.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD"
+			(at 265.43 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "7.8"
+			(at 661.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 761.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "EEE-FT1V101AP"
+			(at 861.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "667-EEE-FT1V101AP"
+			(at 961.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D"
+			(at 1061.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "EEE-FT1V101AP"
+			(at 1161.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac"
+			(at 1261.62 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "2"
+			(uuid "3407a5f3-7047-4503-9143-49c5106f14e6")
+		)
+		(pin "1"
+			(uuid "7b3ae53c-6cc4-4df9-bf39-90eb5e5e8ca5")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "C20")
 					(unit 1)
 				)
 			)

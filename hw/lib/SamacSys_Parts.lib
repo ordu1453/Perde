@@ -139,4 +139,28 @@ P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model 22-23-2041
+#/238201/1777069/2.50/4/3/Connector
+DEF 22-23-2041 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "22-23-2041" 650 200 50 H V L CNN
+F2 "SHDR4W87P0X254_1X4_1001X635X1105P" 650 100 50 H I L CNN
+F3 "http://www.molex.com/pdm_docs/sd/022232041_sd.pdf" 650 0 50 H I L CNN
+F4 "2.54mm,header,KK,vert,Sn,frictn lock,4w Molex KK 254 Series, Series Number 6373, 2.54mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole, Solder Termination" 650 -100 50 H I L CNN "Description"
+F5 "11.05" 650 -200 50 H I L CNN "Height"
+F6 "Molex" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "22-23-2041" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "538-22-23-2041" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Molex/22-23-2041?qs=ILqg114nvd5W6e%252BaZws1Xg%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
 #End Library

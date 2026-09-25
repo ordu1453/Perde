@@ -10,7 +10,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "C9","22uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-87.2750,0.0000,top
 "C10","4.7uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-89.7850,0.0000,top
 "C11","4.7uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-92.2950,0.0000,top
-"C12","100nF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-94.8050,0.0000,top
+"C12","0.1uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-94.8050,0.0000,top
 "C13","22uF","C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",133.1750,-97.3150,0.0000,top
 "J1","USB_C_Receptacle_USB2.0_16P","USB_C_Receptacle_Palconn_UTC16-G",155.2450,-103.1750,0.0000,top
 "L1","IHLP1616BZER4R7M11","INDPM4441X200N",138.9750,-104.0320,0.0000,top
@@ -22,3 +22,4 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "U2","AP63205WU","TSOT-23-6_HandSoldering",157.7450,-92.2000,0.0000,top
 "U3","AP2112K-3.3","SOT-23-5",145.1750,-103.5000,0.0000,top
 "U4","PTR54L","PTR54L15",142.4000,-91.0500,0.0000,top
+"U5","TMC2226-SA","HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias",142.2200,-110.5750,90.0000,top

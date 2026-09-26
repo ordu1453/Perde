@@ -34,6 +34,8 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "C34","470pF X7R 100V","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",140.8350,-77.5150,0.0000,top
 "C35","470pF X7R 100V","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",140.8350,-80.5250,0.0000,top
 "C36","4.7uF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",140.8350,-83.5350,0.0000,top
+"D1","SMBJ16A","DIOM5436X261N",179.5750,-80.7450,0.0000,top
+"D2","SS34","D_SMA",179.5700,-85.7650,0.0000,top
 "J1","USB_C_Receptacle_USB2.0_16P","USB_C_Receptacle_Palconn_UTC16-G",129.7950,-109.5250,0.0000,top
 "J4","Conn_ARM_JTAG_SWD_10","PinHeader_2x05_P1.27mm_Vertical_SMD",163.5550,-97.3050,0.0000,top
 "L1","IHLP1616BZER4R7M11","INDPM4441X200N",139.2150,-108.3420,0.0000,top
@@ -42,6 +44,8 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "R1","10R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",170.7450,-94.5750,0.0000,top
 "R2","5K1","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",170.7450,-97.5250,0.0000,top
 "R3","49K9","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",170.7450,-100.4750,0.0000,top
+"R4","14K","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",149.7650,-105.9650,0.0000,top
+"R5","16K5","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",149.7650,-108.4750,0.0000,top
 "R6","10K","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",149.7650,-110.9850,0.0000,top
 "R7","10K","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",149.7650,-113.4950,0.0000,top
 "R9","10K","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",149.7650,-116.0050,0.0000,top

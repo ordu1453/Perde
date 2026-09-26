@@ -715,7 +715,7 @@
         "uuid": "fe215afa-a228-4dbb-8560-a0753323a3f2"
       }
     ],
-    "used_designators": "U1-6,R1-15,J1-3,Q1,C1-35,L1,#PWR1-48",
+    "used_designators": "U1-6,R1-18,J1-4,Q1,LED1,C1-35,L1,#PWR1-51",
     "variants": []
   },
   "sheets": [
@@ -725,7 +725,7 @@
     ]
   ],
   "text_variables": {
-    "REVISION": "d4319d1"
+    "REVISION": "0a60398"
   },
   "tuning_profiles": {
     "meta": {

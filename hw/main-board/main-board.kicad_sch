@@ -6282,12 +6282,6 @@
 		(uuid "b725f3d0-c5db-4f9d-a7d0-08252ba7f969")
 	)
 	(junction
-		(at 302.26 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9774320-63aa-4a9a-a0e3-ca71f3b4514b")
-	)
-	(junction
 		(at 104.14 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6340,12 +6334,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee085b28-ba20-461c-9d99-d4a18cb69ece")
-	)
-	(junction
-		(at 184.15 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eea601ff-8c5c-47fc-a87d-24a67309fbdb")
 	)
 	(junction
 		(at 63.5 232.41)
@@ -6989,16 +6977,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 182.88) (xy 302.26 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3699f5cb-d300-48d6-89b1-0753e3c925d1")
-	)
-	(wire
-		(pts
 			(xy 104.14 152.4) (xy 105.41 152.4)
 		)
 		(stroke
@@ -7119,16 +7097,6 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 182.88) (xy 290.83 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4192ffc5-ee02-4101-b78e-8a0cfc9ff90d")
-	)
-	(wire
-		(pts
 			(xy 102.87 52.07) (xy 106.68 52.07)
 		)
 		(stroke
@@ -7156,6 +7124,16 @@
 			(type default)
 		)
 		(uuid "43e39b97-0f7c-4db8-b297-a5212bb200cb")
+	)
+	(wire
+		(pts
+			(xy 257.81 228.6) (xy 266.7 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b57ed6-e960-4070-b861-6e456a2c6390")
 	)
 	(wire
 		(pts
@@ -7339,16 +7317,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 182.88) (xy 184.15 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c5ceb32-ecd0-4554-a9ac-af0d48579581")
-	)
-	(wire
-		(pts
 			(xy 311.15 149.86) (xy 311.15 157.48)
 		)
 		(stroke
@@ -7356,6 +7324,16 @@
 			(type default)
 		)
 		(uuid "5da48117-2931-469c-8569-bd849efa2aa0")
+	)
+	(wire
+		(pts
+			(xy 274.32 228.6) (xy 283.21 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e8e7ef4-e0bc-47de-a9d7-a4ed0c912322")
 	)
 	(wire
 		(pts
@@ -7969,7 +7947,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 182.88) (xy 198.12 182.88)
+			(xy 189.23 182.88) (xy 198.12 182.88)
 		)
 		(stroke
 			(width 0)
@@ -8066,16 +8044,6 @@
 			(type default)
 		)
 		(uuid "abd7f0de-d9db-490f-97c6-1c2072f6b9a8")
-	)
-	(wire
-		(pts
-			(xy 180.34 182.88) (xy 184.15 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad483fe0-e8d5-4c9b-9f0c-e807f047cf3a")
 	)
 	(wire
 		(pts
@@ -8289,7 +8257,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 182.88) (xy 316.23 182.88)
+			(xy 307.34 182.88) (xy 316.23 182.88)
 		)
 		(stroke
 			(width 0)
@@ -8306,16 +8274,6 @@
 			(type default)
 		)
 		(uuid "ca72d37b-9747-4985-98c3-5acb4aeb652c")
-	)
-	(wire
-		(pts
-			(xy 302.26 182.88) (xy 302.26 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc89acfb-3367-494d-8797-98c14a917015")
 	)
 	(wire
 		(pts
@@ -8566,16 +8524,6 @@
 			(type default)
 		)
 		(uuid "e6b91fc0-a12b-40a6-a1d2-12f825b2db15")
-	)
-	(wire
-		(pts
-			(xy 171.45 182.88) (xy 172.72 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea2f6314-e67d-4fc1-bf64-4e9f472bd217")
 	)
 	(wire
 		(pts
@@ -8847,8 +8795,8 @@
 		)
 		(uuid "13ebf0cb-b39d-4c31-855f-c02df56ce592")
 	)
-	(label "UART_RX1"
-		(at 184.15 185.42 0)
+	(label "UART_RX"
+		(at 189.23 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8886,16 +8834,6 @@
 			(justify right bottom)
 		)
 		(uuid "26ef5b4d-22a5-4ae1-9b7e-f814e016b01b")
-	)
-	(label "UART_TX1"
-		(at 171.45 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2992ec50-5505-41f7-a6c7-885ef021ec70")
 	)
 	(label "SWDIO"
 		(at 347.98 62.23 0)
@@ -8957,15 +8895,15 @@
 		)
 		(uuid "67cdeb88-66a4-4a61-a430-df46dfd54880")
 	)
-	(label "UART_TX2"
-		(at 289.56 182.88 180)
+	(label "UART_RX"
+		(at 283.21 228.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "7cd834e4-8fd6-4108-b734-5d357926a2a1")
+		(uuid "89d4ffcc-39b1-415a-86d9-1df2c885f9f1")
 	)
 	(label "VREF1"
 		(at 181.61 218.44 180)
@@ -8976,6 +8914,16 @@
 			(justify right bottom)
 		)
 		(uuid "904ccdd8-579c-4db2-a294-de9bb4ca0474")
+	)
+	(label "UART_TX"
+		(at 257.81 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93fce71b-d9d9-4272-bf4f-f87927800fde")
 	)
 	(label "GREEN"
 		(at 195.58 119.38 180)
@@ -9057,8 +9005,8 @@
 		)
 		(uuid "ccc7c9fe-2364-4a65-ab63-e4007ff94f6b")
 	)
-	(label "UART_RX2"
-		(at 302.26 185.42 0)
+	(label "UART_RX"
+		(at 307.34 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17228,86 +17176,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 176.53 182.88 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c7152dfa-6d24-474f-843d-b12ae405c11e")
-		(property "Reference" "R8"
-			(at 176.53 187.706 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 176.53 185.166 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 176.53 184.658 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 176.53 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "85bae97b-89ef-44db-bbfc-1578cddaf1cf")
-		)
-		(pin "2"
-			(uuid "2697e1d4-03c8-4e46-9570-3b1670cf1aaa")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Switching:AP63205WU")
 		(at 78.74 154.94 0)
 		(unit 1)
@@ -17715,7 +17583,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 294.64 182.88 270)
+		(at 270.51 228.6 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -17726,7 +17594,7 @@
 		(dnp no)
 		(uuid "d677c00d-a0f9-4b42-8925-34defd66026b")
 		(property "Reference" "R11"
-			(at 294.64 187.706 90)
+			(at 270.51 233.426 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17736,7 +17604,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 294.64 185.166 90)
+			(at 270.51 230.886 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17746,7 +17614,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 294.64 184.658 90)
+			(at 270.51 230.378 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17757,7 +17625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 294.64 182.88 0)
+			(at 270.51 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17768,7 +17636,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 294.64 182.88 0)
+			(at 270.51 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

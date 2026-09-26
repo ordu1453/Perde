@@ -5828,7 +5828,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 0)
+					(at 0 -2.54 0)
 					(length 5.08)
 					(name "1"
 						(effects
@@ -5846,7 +5846,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 0)
+					(at 0 0 0)
 					(length 5.08)
 					(name "2"
 						(effects
@@ -5864,7 +5864,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
+					(at 0 -5.08 0)
 					(length 5.08)
 					(name "3"
 						(effects
@@ -5882,7 +5882,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
+					(at 0 -7.62 0)
 					(length 5.08)
 					(name "4"
 						(effects
@@ -20649,10 +20649,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ea64e069-be72-4d86-866e-a0a6e591daca")
 		(property "Reference" "J2"
-			(at 267.97 182.8799 0)
+			(at 255.524 192.278 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20663,7 +20662,7 @@
 			)
 		)
 		(property "Value" "S4B-XH-A_LF__SN_"
-			(at 267.97 185.4199 0)
+			(at 255.524 194.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20901,10 +20900,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ee06a121-c2df-4cc6-ad18-4df7fb70fc31")
 		(property "Reference" "J3"
-			(at 386.08 182.8799 0)
+			(at 375.158 192.278 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20915,7 +20913,7 @@
 			)
 		)
 		(property "Value" "S4B-XH-A_LF__SN_"
-			(at 386.08 185.4199 0)
+			(at 375.158 194.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

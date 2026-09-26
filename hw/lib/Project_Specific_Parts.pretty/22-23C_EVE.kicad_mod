@@ -8,7 +8,7 @@
 		(at 0.425 -1.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "25037b08-2b5e-4235-bc00-c73bee8a6e2a")
+		(uuid "9a92df6b-5420-4728-b216-3d6d291d1d03")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0.425 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "d15b1dfe-276a-4c47-a4a2-0c5626db30c1")
+		(uuid "5dc45809-7374-41f3-8b33-a852027f189f")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "58a17180-baee-47f8-86b5-869bf6e487f5")
+		(uuid "a34e5372-bfe9-430b-956e-9c53c687cd6c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f9c4c791-7a29-4bfd-912f-78312876ab03")
+		(uuid "f862e3d6-e2a2-46d4-ac0d-133a742d2622")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "78d7dc64-5014-4b51-a762-a83452c54ba8")
+		(uuid "28bfe302-6146-4873-b724-c9c448e5043b")
 	)
 	(fp_line
 		(start -1.0482 1.599692)
@@ -70,7 +70,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9dd195d0-9781-4981-92a8-bc72c0b31748")
+		(uuid "6a4b64dc-b209-4b81-83a8-063e77b98a94")
 	)
 	(fp_line
 		(start 1.8982 1.599692)
@@ -80,7 +80,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "97dae918-c8ac-4116-b7a4-9b7dbf9501af")
+		(uuid "cd052003-a65a-43a5-ab51-b2760b6d80f5")
 	)
 	(fp_line
 		(start -1.4846 -0.508)
@@ -90,7 +90,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "3c231109-32b1-48c5-9c5f-bddbbc242156")
+		(uuid "5dfb0bc9-3993-434e-a045-c533c1c8f681")
 	)
 	(fp_line
 		(start -1.4846 1.726692)
@@ -100,7 +100,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "8858f594-190a-4d53-9cc3-11dd580bafc5")
+		(uuid "404a2209-49ed-4e12-bbed-00d7d63497fd")
 	)
 	(fp_line
 		(start 2.3346 -0.508)
@@ -110,7 +110,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "e67ac34e-67a5-4686-b5ff-849f99f682da")
+		(uuid "d796dec0-61f8-44a2-9931-183e4121f7d0")
 	)
 	(fp_line
 		(start 2.3346 1.726692)
@@ -120,7 +120,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2a710326-3caa-4348-b501-f27c37a70ae7")
+		(uuid "9f55741b-4c30-4683-8f22-3ffd61db63a5")
 	)
 	(fp_line
 		(start -0.9212 0.126492)
@@ -130,7 +130,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4d595a2f-b420-49bd-b034-d800837abf99")
+		(uuid "2cc623d7-d856-4ca0-af86-fe59d653db63")
 	)
 	(fp_line
 		(start -0.9212 1.472692)
@@ -140,7 +140,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "09a56982-d3a4-4577-b0e4-60f2dea655e5")
+		(uuid "ee59e6be-ecef-42f0-a5c2-b4e43f26e1f8")
 	)
 	(fp_line
 		(start 1.7712 0.126492)
@@ -150,7 +150,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "2bae2162-5d49-418c-8d2a-5e58d11b7e97")
+		(uuid "e4c3cc76-872d-4c18-bd99-5e242c65eca6")
 	)
 	(fp_line
 		(start 1.7712 1.472692)
@@ -160,13 +160,13 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "5a3c5dc7-713f-4a80-9fe0-1dbce26a2ffa")
+		(uuid "ca3ad037-8d2e-45f0-891e-993a21c713cc")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -3 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "5482bc6d-e835-448c-8017-aebd8cccdc9c")
+		(uuid "33fab8ff-931f-4950-840d-340a640e557e")
 		(effects
 			(font
 				(size 1 1)
@@ -178,30 +178,30 @@
 		(at -0.875 0.325001)
 		(size 0.7112 0.762)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "bb488a37-06eb-41d2-8a66-47e8d00f816c")
+		(uuid "9738da5a-a48e-455c-bdd1-cb60d8bc82b1")
 	)
 	(pad "2" smd rect
 		(at 0 0)
 		(size 0.6604 0.508)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5d4aacd5-b83e-4afb-8816-226df919e007")
+		(uuid "b0c65972-7caf-4094-a776-5711220b5e15")
 	)
 	(pad "3" smd rect
 		(at 0.85 0)
 		(size 0.6604 0.508)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "9a1075bc-b06f-4790-aca4-ec76596c6053")
+		(uuid "cf945e11-49c5-4c8e-bdde-7bb9f05ba9f1")
 	)
 	(pad "4" smd rect
 		(at 1.725 0.325001)
 		(size 0.7112 0.762)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "932b9cdf-32fb-4cd2-9e87-80fdb9c265b8")
+		(uuid "a1bfe0e2-daeb-42f2-971d-e00fff7af8b7")
 	)
 	(embedded_fonts no)
 	(model "E:/Projects/Perde/hw/lib/SamacSys_Parts.3dshapes/22-23C_R6GHBHW-C01_2C.stp"
 		(offset
-			(xyz 0.4 -0.25 0.25)
+			(xyz 0.4 -0.15 0.25)
 		)
 		(scale
 			(xyz 1 1 1)

@@ -3,7 +3,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 2,Unpolarized capacitor,C,C14 C23,22 nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2, ,,,,,,,,
 3,Unpolarized capacitor,C,C7 C12 C18 C19 C25 C26,100 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,6, ,,,,,,,,
 4,Unpolarized capacitor,C,C15 C17 C21 C22,100 nF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,4, ,,,,,,,,
-5,Unpolarized capacitor Unpolarized capacitor X7R,C,C1 C2 C3 C4 C5 C6 C10 C11 C16 C24,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,10, ,,,,,,,,
+5,Unpolarized capacitor Unpolarized capacitor X7R,C,C1 C2 C3 C4 C5 C6 C10 C11 C16 C24 C36,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,11, ,,,,,,,,
 6,Unpolarized capacitor,C,C8 C9 C13,22 µF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3, ,,,,,,,,
 7,Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD,EEE-FT1V101AP,C20 C27,EEE-FT1V101AP,EEE1AA101SP,2, ,http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf,7.8,Panasonic,EEE-FT1V101AP,667-EEE-FT1V101AP,https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D,EEE-FT1V101AP,https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac
 8,"Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface",Conn_ARM_JTAG_SWD_10,J4,Conn_ARM_JTAG_SWD_10,PinHeader_2x05_P1.27mm_Vertical_SMD,1, ,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,,,,,,
@@ -36,11 +36,11 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-26_11-24-31
+Date:,2026-09-26_11-28-36
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
 Component Groups:,29
-Component Count:,67
-Fitted Components:,65
+Component Count:,68
+Fitted Components:,66
 Number of PCBs:,1
-Total Components:,65
+Total Components:,66

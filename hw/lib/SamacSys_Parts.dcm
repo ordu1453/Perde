@@ -60,4 +60,16 @@ K
 F http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf
 $ENDCMP
 #
+$CMP SMBJ22A
+D 1-Line ESD Protection
+K
+F https://www.semtech.com/products/circuit-protection/esd-protection/smbj22a
+$ENDCMP
+#
+$CMP SMBJ16A
+D TVS Diode Single Uni-Dir 16V 600W 2-Pin SMB T/R
+K
+F https://datasheet.datasheetarchive.com/originals/dk/DKDS-14/271386.pdf
+$ENDCMP
+#
 #End Doc Library

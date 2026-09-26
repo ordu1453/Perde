@@ -8817,7 +8817,7 @@
 		)
 		(uuid "0896fe44-6d2e-4bec-9df6-4acd9b4ccca9")
 	)
-	(label "VREF"
+	(label "VREF1"
 		(at 210.82 160.02 0)
 		(effects
 			(font
@@ -8847,7 +8847,7 @@
 		)
 		(uuid "13ebf0cb-b39d-4c31-855f-c02df56ce592")
 	)
-	(label "UART_RX"
+	(label "UART_RX1"
 		(at 184.15 185.42 0)
 		(effects
 			(font
@@ -8877,7 +8877,7 @@
 		)
 		(uuid "212da4c2-89a6-44d6-8cb2-55cc64a98c09")
 	)
-	(label "VREF"
+	(label "VREF2"
 		(at 299.72 218.44 180)
 		(effects
 			(font
@@ -8887,7 +8887,7 @@
 		)
 		(uuid "26ef5b4d-22a5-4ae1-9b7e-f814e016b01b")
 	)
-	(label "UART_TX"
+	(label "UART_TX1"
 		(at 171.45 182.88 180)
 		(effects
 			(font
@@ -8907,7 +8907,7 @@
 		)
 		(uuid "3addf6d4-ceaf-487a-94de-0af1182d52c5")
 	)
-	(label "DIAG1"
+	(label "DIAG2"
 		(at 307.34 210.82 0)
 		(effects
 			(font
@@ -8927,7 +8927,7 @@
 		)
 		(uuid "51540314-9a33-4bd7-a7fe-378decc367c1")
 	)
-	(label "DIR1"
+	(label "DIR2"
 		(at 307.34 190.5 0)
 		(effects
 			(font
@@ -8937,7 +8937,7 @@
 		)
 		(uuid "6327e28e-7475-48ed-80cc-5c1fba969cee")
 	)
-	(label "VREF"
+	(label "VREF2"
 		(at 328.93 160.02 0)
 		(effects
 			(font
@@ -8957,7 +8957,7 @@
 		)
 		(uuid "67cdeb88-66a4-4a61-a430-df46dfd54880")
 	)
-	(label "UART_TX"
+	(label "UART_TX2"
 		(at 289.56 182.88 180)
 		(effects
 			(font
@@ -8967,7 +8967,7 @@
 		)
 		(uuid "7cd834e4-8fd6-4108-b734-5d357926a2a1")
 	)
-	(label "VREF"
+	(label "VREF1"
 		(at 181.61 218.44 180)
 		(effects
 			(font
@@ -9017,7 +9017,7 @@
 		)
 		(uuid "b13988e3-e624-4b84-8a6f-3ee17b62bbce")
 	)
-	(label "STEP1"
+	(label "STEP2"
 		(at 307.34 187.96 0)
 		(effects
 			(font
@@ -9057,7 +9057,7 @@
 		)
 		(uuid "ccc7c9fe-2364-4a65-ab63-e4007ff94f6b")
 	)
-	(label "UART_RX"
+	(label "UART_RX2"
 		(at 302.26 185.42 0)
 		(effects
 			(font
@@ -9107,7 +9107,7 @@
 		)
 		(uuid "e046ab9c-5f5e-4bfc-b01d-448e3e2e960e")
 	)
-	(label "EN1"
+	(label "EN2"
 		(at 307.34 203.2 0)
 		(effects
 			(font
@@ -10325,10 +10325,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2b676b88-b708-4ae7-9233-d8df0105c8ed")
 		(property "Reference" "U7"
-			(at 113.03 99.06 0)
+			(at 104.394 99.568 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

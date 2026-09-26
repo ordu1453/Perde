@@ -1,0 +1,230 @@
+(footprint "S4BXHALFSN"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "S4B-XH-A(LF)(SN)-")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at -3.75 -3.45 0)
+		(layer "F.SilkS")
+		(uuid "c8517893-e124-42c5-92fe-58ab5f703b9d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "S4BXHALFSN"
+		(at -3.75 -3.45 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "11723120-4476-4f73-bd48-9bfd985bbcbb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98e61939-5d1e-4357-b3f3-e8883db6dcb8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7d4ee4f-4934-41a1-aaf3-fffbf13601c7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -9.95 -9.2)
+		(end -9.95 2.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3956a46d-53a7-45ac-8753-ca86d97e6075")
+	)
+	(fp_line
+		(start -9.95 2.3)
+		(end 2.45 2.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e469809-8f32-4642-85e7-03832e6b26ec")
+	)
+	(fp_line
+		(start 2.45 -9.2)
+		(end -9.95 -9.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6f97a340-cb24-4c9d-99dd-f518ffbca5b7")
+	)
+	(fp_line
+		(start 2.45 2.3)
+		(end 2.45 -9.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bf91ce69-1843-4d23-8071-dced27487b09")
+	)
+	(fp_line
+		(start -10.95 -10.2)
+		(end -10.95 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e5f4157f-ded5-4231-9b8d-3e46fa938e6f")
+	)
+	(fp_line
+		(start -10.95 3.3)
+		(end 3.45 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "25776858-eb6f-4fb5-984f-f01ca5373031")
+	)
+	(fp_line
+		(start 3.45 -10.2)
+		(end -10.95 -10.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "41648491-897d-4da1-aa43-89069b2301c6")
+	)
+	(fp_line
+		(start 3.45 3.3)
+		(end 3.45 -10.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "49a8a314-b8af-4737-82a5-c35d1321a76f")
+	)
+	(fp_line
+		(start -9.95 -9.2)
+		(end 2.45 -9.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dabf348d-396e-4579-a6aa-3edd1b0465ce")
+	)
+	(fp_line
+		(start -9.95 2.3)
+		(end -9.95 -9.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "53288dfd-3202-4c57-836d-12349df4e84d")
+	)
+	(fp_line
+		(start 2.45 -9.2)
+		(end 2.45 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b97943df-36ea-40ea-afb5-7842264fd093")
+	)
+	(fp_line
+		(start 2.45 2.3)
+		(end -9.95 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8d9ecb65-3645-403c-8c4a-68f891e96bb0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.75 -3.45 0)
+		(layer "F.Fab")
+		(uuid "3aac846b-1dfa-45d5-b8af-83a54826d514")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.4 1.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "607bf163-fd0f-44aa-91cd-b675441ea1db")
+	)
+	(pad "2" thru_hole circle
+		(at -2.5 0)
+		(size 1.4 1.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "35b9f1ce-15b3-4888-bff7-714e1bd239eb")
+	)
+	(pad "3" thru_hole circle
+		(at -5 0)
+		(size 1.4 1.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2c22233b-97e9-49d0-b286-67df68ec5e15")
+	)
+	(pad "4" thru_hole circle
+		(at -7.5 0)
+		(size 1.4 1.4)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "49aba899-8d1c-4b8d-938d-67890bb278d8")
+	)
+	(embedded_fonts no)
+	(model "E:\\Projects\\Perde\\hw\\lib\\SamacSys_Parts.3dshapes\\S4B-XH-A_LF__SN_.stp"
+		(offset
+			(xyz -3.75 3.45 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -180 -0)
+		)
+	)
+)

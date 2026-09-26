@@ -15307,8 +15307,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
-		(dnp yes)
+		(in_pos_files yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d98f5ba-bf36-4a86-a02d-ef8c6cb5a110")
 		(property "Reference" "R5"

@@ -20,14 +20,15 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 19,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
 20,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
 21,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
-22,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-23,"Grey Plunger Tactile Switch, SPST-NO 50 mA @ 24 V dc 0.9mm",B3F-3100,S1,B3F-3100,B3F3100,1, ,http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf,7,OMRON Electronics,B3F-3100,653-B3F-3100,https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-3100?qs=xU3oIf5SR1r1ubr5bt4Q4A%3D%3D,B3F-3100,https://www.arrow.com/en/products/b3f3100/omron.html?utm_currency=USD&region=europe
-24,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
-25,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
-26,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
-27,,KTD2026BEWE-TR,U7,KTD2026BEWE-TR,UTDFN8_1P5X1P5_KIN,1, ,KTD2026BEWE-TR,,,,,,,
-28,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
-29,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
+22,Resistor,R,R4,14 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+23,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+24,"Grey Plunger Tactile Switch, SPST-NO 50 mA @ 24 V dc 0.9mm",B3F-3100,S1,B3F-3100,B3F3100,1, ,http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf,7,OMRON Electronics,B3F-3100,653-B3F-3100,https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-3100?qs=xU3oIf5SR1r1ubr5bt4Q4A%3D%3D,B3F-3100,https://www.arrow.com/en/products/b3f3100/omron.html?utm_currency=USD&region=europe
+25,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
+26,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
+27,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
+28,,KTD2026BEWE-TR,U7,KTD2026BEWE-TR,UTDFN8_1P5X1P5_KIN,1, ,KTD2026BEWE-TR,,,,,,,
+29,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
+30,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
 
 
 
@@ -37,11 +38,11 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-26_15-29-33
+Date:,2026-09-26_16-26-40
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,30
+Component Groups:,31
 Component Count:,68
-Fitted Components:,66
+Fitted Components:,67
 Number of PCBs:,1
-Total Components:,66
+Total Components:,67

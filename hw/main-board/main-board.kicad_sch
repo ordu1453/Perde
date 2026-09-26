@@ -7447,16 +7447,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 160.02) (xy 257.81 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "186e97c4-8242-4fa2-84c6-bf414d30bbc3")
-	)
-	(wire
-		(pts
 			(xy 81.28 234.95) (xy 77.47 234.95)
 		)
 		(stroke
@@ -9177,16 +9167,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 147.32) (xy 257.81 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9097e2d-0245-46d6-8401-b1ef3626ed3b")
-	)
-	(wire
-		(pts
 			(xy 266.7 101.6) (xy 266.7 111.76)
 		)
 		(stroke
@@ -10264,7 +10244,7 @@
 			(justify left bottom)
 		)
 		(uuid "733b855e-c3b0-41b8-bc2f-2cd99f3ea194")
-		(property "Netclass" "Default"
+		(property "Netclass" "DRV2"
 			(at 402.0185 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -10300,7 +10280,7 @@
 			(justify left bottom)
 		)
 		(uuid "e7b37b06-4db1-47db-9f1b-bc308c0793b5")
-		(property "Netclass" "Default"
+		(property "Netclass" "DRV1"
 			(at 278.8285 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -10313,7 +10293,7 @@
 			)
 		)
 		(property "Component Class" "DRV1"
-			(at 278.13 133.858 0)
+			(at 278.892 133.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16533,8 +16513,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 218.44 106.68 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9353082a-4ae5-4b3f-bfb2-ba85867a66bb")
+		(property "Reference" "#PWR061"
+			(at 218.44 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8362d683-3e97-41b5-aac1-9a13312ec700")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Samacsys:EEE-FT1V101AP")
-		(at 257.81 160.02 90)
+		(at 218.44 119.38 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16545,7 +16603,7 @@
 		(fields_autoplaced yes)
 		(uuid "93fac8fb-b0a4-4306-b671-e4fd5d70a4ee")
 		(property "Reference" "C20"
-			(at 261.62 152.3999 90)
+			(at 222.25 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16556,7 +16614,7 @@
 			)
 		)
 		(property "Value" "EEE-FT1V101AP"
-			(at 261.62 154.9399 90)
+			(at 222.25 114.2999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16567,7 +16625,7 @@
 			)
 		)
 		(property "Footprint" "EEE1AA101SP"
-			(at 354 151.13 0)
+			(at 314.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16579,7 +16637,7 @@
 			)
 		)
 		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
-			(at 454 151.13 0)
+			(at 414.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16591,7 +16649,7 @@
 			)
 		)
 		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD"
-			(at 257.81 160.02 0)
+			(at 218.44 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16602,7 +16660,7 @@
 			)
 		)
 		(property "Height" "7.8"
-			(at 654 151.13 0)
+			(at 614.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16614,7 +16672,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Panasonic"
-			(at 754 151.13 0)
+			(at 714.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16626,7 +16684,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "EEE-FT1V101AP"
-			(at 854 151.13 0)
+			(at 814.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16638,7 +16696,7 @@
 			)
 		)
 		(property "Mouser Part Number" "667-EEE-FT1V101AP"
-			(at 954 151.13 0)
+			(at 914.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16650,7 +16708,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D"
-			(at 1054 151.13 0)
+			(at 1014.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16662,7 +16720,7 @@
 			)
 		)
 		(property "Arrow Part Number" "EEE-FT1V101AP"
-			(at 1154 151.13 0)
+			(at 1114.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16674,7 +16732,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac"
-			(at 1254 151.13 0)
+			(at 1214.63 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21241,6 +21299,84 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 218.44 119.38 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb893199-10e5-4735-bc24-ad8434421a63")
+		(property "Reference" "#PWR060"
+			(at 218.44 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 218.44 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 218.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d9540b8-deb9-4a2f-8f2a-b7397b2d66ea")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)

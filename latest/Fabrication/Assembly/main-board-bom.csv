@@ -16,17 +16,18 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 15,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
 16,Resistor,82R,R16 R17,82 Ω,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
 17,Resistor,300R,R18,300 Ω,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
-18,Resistor,R,R8 R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
-19,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-20,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
-21,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
-22,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-23,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
-24,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
-25,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
-26,,KTD2026BEWE-TR,U7,KTD2026BEWE-TR,UTDFN8_1P5X1P5_KIN,1, ,KTD2026BEWE-TR,,,,,,,
-27,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
-28,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
+18,Resistor,R,R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+19,Resistor,1K,R8,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+20,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+21,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
+22,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
+23,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+24,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
+25,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
+26,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
+27,,KTD2026BEWE-TR,U7,KTD2026BEWE-TR,UTDFN8_1P5X1P5_KIN,1, ,KTD2026BEWE-TR,,,,,,,
+28,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
+29,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
 
 
 
@@ -36,10 +37,10 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-26_12-39-01
+Date:,2026-09-26_13-04-55
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,29
+Component Groups:,30
 Component Count:,68
 Fitted Components:,66
 Number of PCBs:,1

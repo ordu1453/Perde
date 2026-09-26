@@ -15322,7 +15322,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "16K5"
 			(at 93.98 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21144,8 +21144,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
-		(dnp yes)
+		(in_pos_files yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd483dcf-9986-4fc1-b6a9-7d0852fda8b2")
 		(property "Reference" "R4"
@@ -21159,7 +21159,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "14K"
 			(at 104.14 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)

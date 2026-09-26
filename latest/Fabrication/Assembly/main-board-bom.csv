@@ -14,10 +14,10 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 13,,22-23C_R6GHBHW-C01_2C,LED1,22-23C/R6GHBHW-C01/2C,22-23C_EVE,1, ,22-23C/R6GHBHW-C01/2C,,,,,,,
 14,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
 15,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-16,Resistor,82R,R16 R17,82 Ω,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
-17,Resistor,300R,R18,300 Ω,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
-18,Resistor,R,R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
-19,Resistor,1K,R8,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+16,Resistor,300R,R18,300 Ω,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+17,Resistor,R,R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+18,Resistor,1K,R8,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1, ,,,,,,,,
+19,Resistor,R,R16 R17,2.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
 20,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
 21,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
 22,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
@@ -37,7 +37,7 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-26_13-04-55
+Date:,2026-09-26_13-31-17
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
 Component Groups:,30

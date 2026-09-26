@@ -7997,16 +7997,6 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 147.32) (xy 375.92 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "954a2ff2-52ba-4a1e-b366-f713dcb56c19")
-	)
-	(wire
-		(pts
 			(xy 106.68 36.83) (xy 110.49 36.83)
 		)
 		(stroke
@@ -8894,16 +8884,6 @@
 			(type default)
 		)
 		(uuid "f3e80c6a-f335-4ada-8635-621be3253b94")
-	)
-	(wire
-		(pts
-			(xy 363.22 160.02) (xy 375.92 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f834883d-5bf3-4804-8d82-24bab42110dc")
 	)
 	(wire
 		(pts
@@ -14840,174 +14820,6 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Samacsys:EEE-FT1V101AP")
-		(at 375.92 160.02 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c81de66-b14d-4fce-9f7a-bbc8d076bbe0")
-		(property "Reference" "C27"
-			(at 379.73 152.3999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "EEE-FT1V101AP"
-			(at 379.73 154.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "EEE1AA101SP"
-			(at 472.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
-			(at 572.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD"
-			(at 375.92 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "7.8"
-			(at 772.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 872.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FT1V101AP"
-			(at 972.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FT1V101AP"
-			(at 1072.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D"
-			(at 1172.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "EEE-FT1V101AP"
-			(at 1272.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac"
-			(at 1372.11 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "1f2d1e09-67bf-43cc-a5c8-1089b1c3d1a9")
-		)
-		(pin "1"
-			(uuid "c0e18104-2778-437b-9441-78799c3cefb5")
-		)
-		(instances
-			(project "main-board"
-				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
-					(reference "C27")
 					(unit 1)
 				)
 			)

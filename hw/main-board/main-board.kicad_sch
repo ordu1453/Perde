@@ -3319,8 +3319,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U4"
-				(at 1.524 11.43 0)
+			(property "Reference" "U"
+				(at 1.27 9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3329,8 +3329,8 @@
 					)
 				)
 			)
-			(property "Value" "PTR54L"
-				(at 3.81 9.144 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3339,7 +3339,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Project_Specific_Parts:PTR54L15"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3373,6 +3373,17 @@
 				)
 			)
 			(symbol "PTR54L_0_1"
+				(rectangle
+					(start 0 7.62)
+					(end 38.1 -44.45)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0 0) (xy 38.1 0)
@@ -3401,17 +3412,6 @@
 				)
 			)
 			(symbol "PTR54L_1_1"
-				(rectangle
-					(start 0 7.62)
-					(end 38.1 -44.45)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin power_in line
 					(at -2.54 -2.54 0)
 					(length 2.54)
@@ -4491,7 +4491,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "SamacSys_Parts:DFN_3X3_EP"
+			(property "Footprint" "DFN_3X3_EP"
 				(at 21.59 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4759,6 +4759,240 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Samacsys:B3F-3100"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at 16.51 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "B3F-3100"
+				(at 16.51 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "B3F3100"
+				(at 16.51 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+				(at 16.51 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Grey Plunger Tactile Switch, SPST-NO 50 mA @ 24 V dc 0.9mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "7"
+				(at 16.51 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "OMRON Electronics"
+				(at 16.51 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "B3F-3100"
+				(at 16.51 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "653-B3F-3100"
+				(at 16.51 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-3100?qs=xU3oIf5SR1r1ubr5bt4Q4A%3D%3D"
+				(at 16.51 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "B3F-3100"
+				(at 16.51 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/b3f3100/omron.html?utm_currency=USD&region=europe"
+				(at 16.51 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "B3F-3100_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5061,7 +5295,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "SamacSys_Parts:INDPM4441X200N"
+			(property "Footprint" "INDPM4441X200N"
 				(at 16.51 -96.19 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6156,6 +6390,12 @@
 		(uuid "4154435b-9798-4a86-a379-7f765f656981")
 	)
 	(junction
+		(at 356.87 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4385f7cb-145f-4848-9749-2189b9b9b99e")
+	)
+	(junction
 		(at 96.52 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6214,6 +6454,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61e02a19-dde1-4886-b08b-898ef04942a9")
+	)
+	(junction
+		(at 377.19 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63bfa095-fe00-4ac2-8d9e-9c7cd6ac4390")
 	)
 	(junction
 		(at 60.96 152.4)
@@ -6597,6 +6843,26 @@
 	)
 	(wire
 		(pts
+			(xy 287.02 76.2) (xy 306.07 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bc280a6-22b7-4daf-9e6a-ba7cd16d459f")
+	)
+	(wire
+		(pts
+			(xy 377.19 106.68) (xy 377.19 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c59568c-5034-44f1-a1eb-823f3a453554")
+	)
+	(wire
+		(pts
 			(xy 245.11 157.48) (xy 245.11 160.02)
 		)
 		(stroke
@@ -6947,6 +7213,16 @@
 	)
 	(wire
 		(pts
+			(xy 356.87 107.95) (xy 356.87 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e246879-3bd3-4513-af0c-18f12789fd91")
+	)
+	(wire
+		(pts
 			(xy 215.9 160.02) (xy 218.44 160.02)
 		)
 		(stroke
@@ -6964,6 +7240,16 @@
 			(type default)
 		)
 		(uuid "3057c44c-6913-45cc-b0e7-dee85d5a8726")
+	)
+	(wire
+		(pts
+			(xy 346.71 107.95) (xy 356.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "306cb456-211f-42cd-be85-0c6c2f9f0164")
 	)
 	(wire
 		(pts
@@ -7204,6 +7490,16 @@
 			(type default)
 		)
 		(uuid "3f10275a-e784-4f56-94bf-bbf24339febc")
+	)
+	(wire
+		(pts
+			(xy 377.19 107.95) (xy 377.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6b2b87-d9af-4fa1-937d-d6352725e0be")
 	)
 	(wire
 		(pts
@@ -7584,6 +7880,16 @@
 			(type default)
 		)
 		(uuid "6c659a4e-db52-4d54-8d8f-53d061005769")
+	)
+	(wire
+		(pts
+			(xy 356.87 106.68) (xy 356.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c6903a2-7121-4053-a8b8-769c1167d6be")
 	)
 	(wire
 		(pts
@@ -8294,6 +8600,16 @@
 			(type default)
 		)
 		(uuid "ba56b199-4230-4699-80ae-872409bdf709")
+	)
+	(wire
+		(pts
+			(xy 377.19 107.95) (xy 381 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc1d7a77-7fe7-4bb2-9a06-f28e96db46f1")
 	)
 	(wire
 		(pts
@@ -9195,6 +9511,16 @@
 		)
 		(uuid "67cdeb88-66a4-4a61-a430-df46dfd54880")
 	)
+	(label "BUTTON"
+		(at 306.07 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79a4ff0c-fce2-4a9b-8c7f-b5e3e0cf27dd")
+	)
 	(label "UART_RX"
 		(at 306.07 86.36 180)
 		(effects
@@ -9234,6 +9560,16 @@
 			(justify right bottom)
 		)
 		(uuid "9510c5ad-5787-4a0e-8970-7cbc0a52eaf6")
+	)
+	(label "BUTTON"
+		(at 346.71 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98d6d10e-bdd3-454f-9321-4b7afae90bf2")
 	)
 	(label "RESET"
 		(at 347.98 69.85 0)
@@ -9457,7 +9793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Samacsys:INDPM4441X200N"
+		(property "Footprint" "INDPM4441X200N"
 			(at 121.92 248.59 0)
 			(hide yes)
 			(show_name no)
@@ -10060,7 +10396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Samacsys:DFN_3X3_EP"
+		(property "Footprint" "DFN_3X3_EP"
 			(at 132.08 139.37 0)
 			(hide yes)
 			(show_name no)
@@ -10508,7 +10844,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 328.93 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -10644,7 +10980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project_Specific_Parts:UTDFN8_1P5X1P5_KIN"
+		(property "Footprint" "UTDFN8_1P5X1P5_KIN"
 			(at 92.202 94.742 0)
 			(hide yes)
 			(show_name no)
@@ -10848,7 +11184,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 250.19 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -10929,7 +11265,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 350.52 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11028,6 +11364,178 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Samacsys:B3F-3100")
+		(at 356.87 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f2a7e2b-33cd-4af1-ada6-9421d2abf8bc")
+		(property "Reference" "S1"
+			(at 367.03 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-3100"
+			(at 367.03 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "B3F3100"
+			(at 373.38 201.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf"
+			(at 373.38 301.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Grey Plunger Tactile Switch, SPST-NO 50 mA @ 24 V dc 0.9mm"
+			(at 356.87 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "7"
+			(at 373.38 501.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "OMRON Electronics"
+			(at 373.38 601.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "B3F-3100"
+			(at 373.38 701.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "653-B3F-3100"
+			(at 373.38 801.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-3100?qs=xU3oIf5SR1r1ubr5bt4Q4A%3D%3D"
+			(at 373.38 901.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "B3F-3100"
+			(at 373.38 1001.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/b3f3100/omron.html?utm_currency=USD&region=europe"
+			(at 373.38 1101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3"
+			(uuid "77a00997-f2d4-4b18-92b8-be4b5648c50b")
+		)
+		(pin "2"
+			(uuid "ac842c01-c630-493e-9ca9-349c869a58f1")
+		)
+		(pin "4"
+			(uuid "932429ea-fbb4-4772-8f0c-2dc12ad4d605")
+		)
+		(pin "1"
+			(uuid "378d9411-ec32-4728-abc9-802226797568")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -11743,7 +12251,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 133.35 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12381,7 +12889,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 63.5 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -13365,7 +13873,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 110.49 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -13465,6 +13973,85 @@
 			(project "main-board"
 				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 381 107.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "650c0211-1f15-4a7a-a350-998d51ac293c")
+		(property "Reference" "#PWR056"
+			(at 387.35 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 384.81 107.9499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 381 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7540079-0eb6-4243-9128-1190c63963c0")
+		)
+		(instances
+			(project "main-board"
+				(path "/fe215afa-a228-4dbb-8560-a0753323a3f2"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -14556,7 +15143,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 232.41 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -15039,7 +15626,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 368.3 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -15869,7 +16456,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 250.19 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -15951,7 +16538,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 210.82 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -17333,7 +17920,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 232.41 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -18533,7 +19120,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 368.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -18693,7 +19280,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor X7R"
+		(property "Description" "Unpolarized capacitor"
 			(at 350.52 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -19070,7 +19657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Samacsys:S4BXHALFSN"
+		(property "Footprint" "S4BXHALFSN"
 			(at 267.97 275.26 0)
 			(hide yes)
 			(show_name no)

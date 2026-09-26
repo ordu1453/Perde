@@ -6,21 +6,22 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 5,Unpolarized capacitor Unpolarized capacitor X7R,C,C1 C2 C3 C4 C5 C6 C10 C11 C16 C24,4.7 µF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,10, ,,,,,,,,
 6,Unpolarized capacitor,C,C8 C9 C13,22 µF,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,3, ,,,,,,,,
 7,Aluminum Electrolytic Capacitors - SMD 100uF 35volts 6.3x5.8mm SMD,EEE-FT1V101AP,C20 C27,EEE-FT1V101AP,EEE1AA101SP,2, ,http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf,7.8,Panasonic,EEE-FT1V101AP,667-EEE-FT1V101AP,https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FT1V101AP?qs=CMJjuEs1%252BuEsbOqam%2FkTqg%3D%3D,EEE-FT1V101AP,https://www.arrow.com/en/products/eeeft1v101ap/panasonic.html?utm_currency=USD&region=nac
-8,"2.54mm,header,KK,90,Sn,frictn lock,4w Molex KK 254 Series, Series Number 7478, 2.54mm Pitch 4 Way 1 Row Right Angle PCB Header, Through Hole",22-05-3041,J2 J3,22-05-3041,22053041,2, ,http://www.molex.com/webdocs/datasheets/pdf/en-us//0022053041_PCB_HEADERS.pdf,,Molex,22-05-3041,538-22-05-3041,https://www.mouser.co.uk/ProductDetail/Molex/22-05-3041?qs=wUVoC1r15A%2FT%252BJIvtWt%252B5Q%3D%3D,,
-9,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_Palconn_UTC16-G,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
-10,Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc,IHLP1616BZER4R7M11,L1,IHLP1616BZER4R7M11,INDPM4441X200N,1, ,https://www.vishay.com/docs/34196/lp16bz11.pdf,2,Vishay,IHLP1616BZER4R7M11,70-IHLP1616BZER4R7M1,https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D,IHLP1616BZER4R7M11,https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay
-11,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
-12,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-13,Resistor,R,R8 R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
-14,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-15,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
-16,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
-17,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
-18,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
-19,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
-20,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
-21,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
-22,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
+8,"XH-2.5mm Header side entry 4 way JST XH Series, Series Number S4B, 2.5mm Pitch 4 Way 1 Row Right Angle PCB Header, Solder Termination, 3A",S4B-XH-A_LF__SN_,J2,S4B-XH-A_LF__SN_,S4BXHALFSN,1, ,https://www.mouser.co.uk/ProductDetail/JST-Commercial/S4B-XH-ALFSN?qs=QpmGXVUTftEyAvx%252Br33AyQ%3D%3D&srsltid=AfmBOopXgwHK5vQKy207Eg2VBdixziHXVBrLkW0Mvqq_XGzuQb0VSmKc,7,JST (JAPAN SOLDERLESS TERMINALS),S4B-XH-A(LF)(SN),N/A,https://www.mouser.co.uk/ProductDetail/JST-Commercial/S4B-XH-ALFSN?qs=QpmGXVUTftF7eeJ4yg3VYQ%3D%3D,S4B-XH-A(LF)(SN),https://www.arrow.com/en/products/s4b-xh-a-lf-sn/jst-manufacturing.html?utm_currency=USD&region=europe
+9,"XH-2.5mm Header side entry 4 way JST XH Series, Series Number S4B, 2.5mm Pitch 4 Way 1 Row Right Angle PCB Header, Solder Termination, 3A",S4B-XH-A_LF__SN_,J3,S4B-XH-A_LF__SN_,S4BXHALFSN,1, ,https://www.mouser.co.uk/ProductDetail/JST-Commercial/S4B-XH-ALFSN?qs=QpmGXVUTftEyAvx%252Br33AyQ%3D%3D&srsltid=AfmBOopXgwHK5vQKy207Eg2VBdixziHXVBrLkW0Mvqq_XGzuQb0VSmKc,7,JST (JAPAN SOLDERLESS TERMINALS),S4B-XH-A(LF)(SN),N/A,https://www.mouser.co.uk/ProductDetail/JST-Commercial/S4B-XH-ALFSN?qs=QpmGXVUTftF7eeJ4yg3VYQ%3D%3D,S4B-XH-A(LF)(SN),https://www.arrow.com/en/products/s4b-xh-a-lf-sn/jst-manufacturing.html?utm_currency=USD&region=europe
+10,USB 2.0-only 16P Type-C Receptacle connector,USB_C_Receptacle_USB2.0_16P,J1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_Palconn_UTC16-G,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,
+11,Vishay IHLP1616BZ-11 Series Shielded Wire-wound SMD Inductor 4.7 uH +/-20% 1.75A Idc,IHLP1616BZER4R7M11,L1,IHLP1616BZER4R7M11,INDPM4441X200N,1, ,https://www.vishay.com/docs/34196/lp16bz11.pdf,2,Vishay,IHLP1616BZER4R7M11,70-IHLP1616BZER4R7M1,https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP1616BZER4R7M11?qs=gMuw6kkpPFgfyxuC44lHBg%3D%3D,IHLP1616BZER4R7M11,https://www.arrow.com/en/products/ihlp1616bzer4r7m11/vishay
+12,30V P-Channel MOSFET,AONR21307,Q1,AONR21307,DFN_3X3_EP,1, ,http://www.aosmd.com/pdfs/datasheet/AONR21307.pdf,,Alpha & Omega Semiconductors,AONR21307,,,AONR21307,https://www.arrow.com/en/products/aonr21307/alpha-and-omega-semiconductor?utm_currency=USD&region=nac
+13,Resistor,R,R1,10 Ω,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+14,Resistor,R,R8 R11,1 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
+15,Resistor,R,R2,5.1 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+16,Resistor,R,R10 R15,8.2 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2, ,,,,,,,,
+17,Resistor,R,R6 R7 R9 R12 R13 R14,10 kΩ,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,6, ,,,,,,,,
+18,Resistor,R,R3,49.9 kΩ,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,1, ,,,,,,,,
+19,"600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5",AP2112K-3.3,U3,AP2112K-3.3,SOT-23-5,1, ,https://www.diodes.com/assets/Datasheets/AP2112.pdf,,,,,,,
+20,"2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6",AP63205WU,U2,AP63205WU,TSOT-23-6,1, ,https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf,,,,,,,
+21,"USB-PD Sink IC Port Controller, VBUS = 3..25V, USB Type-C rev. 1.4, USB-PD rev. 3.0, BC1.2, WDFN-10 / WSON-10",HUSB238_xxxDD,U1,HUSB238_xxxDD,WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,1, ,https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf,,,,,,,
+22,,PTR54L,U4,PTR54L,PTR54L15,1, ,,,,,,,,
+23,"Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28",TMC2226-SA,U5 U6,TMC2226-SA,HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias,2, ,https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf,,,,,,,
 
 
 
@@ -30,10 +31,10 @@ Project info:
 Schematic:,main-board
 Variant:,default
 Revision:,${REVISION}
-Date:,2026-09-25_21-29-24
+Date:,2026-09-26_09-18-50
 KiCad Version:,10.0.4-10.0.4~ubuntu25.10.1
 Statistics:
-Component Groups:,23
+Component Groups:,24
 Component Count:,61
 Fitted Components:,59
 Number of PCBs:,1
